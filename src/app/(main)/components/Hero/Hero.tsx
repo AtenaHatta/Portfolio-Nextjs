@@ -4,8 +4,8 @@ import "./heroStyle.css";
 
 export default function Hero() {
   return (
-    <div className="mt-24 md:mt-44 mb-56">
-      <div className="font-specialElite font-yesevaOne ml-1 md:ml-10">
+    <div className="mt-24 md:mt-56 mb-56">
+      <div className="font-yesevaOne ml-1 md:ml-10">
         <h1 className="text-8xl md:text-7xl">
           I’m{" "}
           <span className="block md:inline text-5xl md:text-7xl">

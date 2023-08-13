@@ -21,15 +21,15 @@ import {
 } from "react-icons/si";
 
 const frontendIcons = [
-  { icon: SiReact, name: "React" },
-  { icon: SiTypescript, name: "TypeScript" },
+  { icon: SiReact, name: "React", color: "#8C52FF" },
+  { icon: SiTypescript, name: "TypeScript", color: "#8C52FF" },
   { icon: SiNextdotjs, name: "Nextjs" },
   { icon: SiRedux, name: "Redux" },
   { icon: SiJavascript, name: "JavaScript" },
   { icon: SiHtml5, name: "HTML" },
   { icon: SiCss3, name: "CSS" },
   { icon: SiSass, name: "Sass" },
-  { icon: SiTailwindcss, name: "Tailwind" },
+  { icon: SiTailwindcss, name: "Tailwind", color: "#8C52FF" },
   { icon: SiMui, name: "MaterialUI" },
 ];
 
@@ -49,13 +49,19 @@ const otherIcons = [
 
 export default function Skill() {
   return (
-<div className="mb-56 text-black items-center flex flex-col justify-center min-h-screen xs:m-5">
+    <div className="mb-56 text-black items-center flex flex-col justify-center min-h-screen xs:m-5">
       <div>
         <h2 className="text-xl">Frontend</h2>
         <div className="flex bg-[#e8e8e8a7] rounded-lg justify-center m-2 xs:p-1 md:p-5 flex-wrap">
           {frontendIcons.map((item, index) => (
-            <div key={index} className="flex flex-col justify-center items-center xs:px-5 xs:py-3 md:px-5 xs:w-16 md:w-24 text-center">
-              {React.createElement(item.icon, { className: "xs:text-4xl md:text-5xl p-1" })}
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center xs:px-5 xs:py-3 md:px-5 xs:w-16 md:w-24 text-center"
+            >
+              {React.createElement(item.icon, {
+                className: "xs:text-4xl md:text-5xl p-1",
+                style: { color: item.color },
+              })}
               <span className="text-xs">{item.name}</span>
             </div>
           ))}
@@ -67,8 +73,14 @@ export default function Skill() {
           <h2 className="text-xl">Backend</h2>
           <div className="flex bg-[#e8e8e8a7] rounded-lg m-2 xs:p-1 md:p-5 flex-wrap">
             {backendIcons.map((item, index) => (
-              <div key={index} className="flex flex-col justify-center items-center xs:p-3 md:px-5 xs:w-16 md:w-24 text-center"> {/* Set a fixed width for the icon container and center the text */}
-                {React.createElement(item.icon, { className: "xs:text-4xl md:text-5xl p-1" })}
+              <div
+                key={index}
+                className="flex flex-col justify-center items-center xs:p-3 md:px-5 xs:w-16 md:w-24 text-center"
+              >
+                {" "}
+                {React.createElement(item.icon, {
+                  className: "xs:text-4xl md:text-5xl p-1",
+                })}
                 <span className="text-xs">{item.name}</span>
               </div>
             ))}
@@ -79,8 +91,14 @@ export default function Skill() {
           <h2 className="text-xl">Others</h2>
           <div className="flex bg-[#e8e8e8a7] rounded-lg m-2 xs:p-1 md:p-5 flex-wrap">
             {otherIcons.map((item, index) => (
-              <div key={index} className="flex flex-col justify-center items-center xs:p-3 md:px-5 xs:w-16 md:w-24 text-center"> {/* Set a fixed width for the icon container and center the text */}
-                {React.createElement(item.icon, { className: "xs:text-4xl md:text-5xl p-1" })}
+              <div
+                key={index}
+                className="flex flex-col justify-center items-center xs:p-3 md:px-5 xs:w-16 md:w-24 text-center"
+              >
+                {" "}
+                {React.createElement(item.icon, {
+                  className: "xs:text-4xl md:text-5xl p-1",
+                })}
                 <span className="text-xs">{item.name}</span>
               </div>
             ))}
