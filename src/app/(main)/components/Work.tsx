@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 
-export default function Page({}) {
+export default function Work({}) {
     return(
         <div className="flex">
           <div className="flex flex-col">

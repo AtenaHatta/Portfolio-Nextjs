@@ -13,7 +13,7 @@ h3 {
       width: 0;
     }
     to {
-      width: 1030px;
+      width: 790px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -22,7 +22,7 @@ h3 {
         width: 0;
       }
       to {
-        width: 240px;
+        width: 360px;
       }
     }
   }

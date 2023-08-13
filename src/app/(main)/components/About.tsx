@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Page({}) {
+export default function About({}) {
   return (
     <div className="text-black flex items-center xs:flex-col md:flex-row justify-center h-screen">
         <div>image here</div>

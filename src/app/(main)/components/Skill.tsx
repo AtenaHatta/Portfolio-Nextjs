@@ -49,7 +49,7 @@ const otherIcons = [
   { icon: SiNetlify, name: "Netlify" },
 ];
 
-export default function Page() {
+export default function Skill() {
   return (
 <div className="text-black items-center flex flex-col justify-center min-h-screen xs:m-5">
       <div>
