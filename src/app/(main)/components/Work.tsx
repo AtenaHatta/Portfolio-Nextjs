@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Work({}) {
     return(
-        <div className="flex">
+        <div className="flex mb-56">
           <div className="flex flex-col">
             <div>image</div>
             <h1>title</h1>

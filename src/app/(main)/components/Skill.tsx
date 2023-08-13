@@ -13,7 +13,6 @@ import {
   SiRedux,
   SiSass,
   SiMongodb,
-  SiBootstrap,
   SiTypescript,
   SiMui,
   SiVercel,
@@ -31,7 +30,6 @@ const frontendIcons = [
   { icon: SiCss3, name: "CSS" },
   { icon: SiSass, name: "Sass" },
   { icon: SiTailwindcss, name: "Tailwind" },
-  { icon: SiBootstrap, name: "Bootstrap" },
   { icon: SiMui, name: "MaterialUI" },
 ];
 
@@ -51,7 +49,7 @@ const otherIcons = [
 
 export default function Skill() {
   return (
-<div className="text-black items-center flex flex-col justify-center min-h-screen xs:m-5">
+<div className="mb-56 text-black items-center flex flex-col justify-center min-h-screen xs:m-5">
       <div>
         <h2 className="text-xl">Frontend</h2>
         <div className="flex bg-[#e8e8e8a7] rounded-lg justify-center m-2 xs:p-1 md:p-5 flex-wrap">

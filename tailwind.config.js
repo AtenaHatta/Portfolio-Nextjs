@@ -4,8 +4,6 @@ export default {
   theme: {
     extend: {
       images: (theme) => ({
-        img_prof: "url('https://ik.imagekit.io/atcan/profilephoto.jpg?updatedAt=1689406165811')",
-        img_about: "url('https://ik.imagekit.io/atcan/about.png?updatedAt=1689406114260')",
       }),
       fontFamily: {
         yesevaOne: ['Yeseva One', 'cursive'],

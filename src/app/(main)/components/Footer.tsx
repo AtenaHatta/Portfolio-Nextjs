@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 export default function Footer() {
   return (
     <>
-       <div className="text-black xs:text-3xl md:text-5xl space-y-5 xs:md-5 md:mb-10 flex flex-col items-end justify-end fixed bottom-0 right-0 p-4">
+       <div className="text-black xs:text-3xl md:text-5xl space-y-6 xs:md-5 md:mb-10 flex flex-col items-end justify-end fixed bottom-0 right-0 p-4">
         <a
           href="https://github.com/AtenaHatta"
           className="rightmenu-icon2 hover:bg-black hover:text-white rounded-md"
