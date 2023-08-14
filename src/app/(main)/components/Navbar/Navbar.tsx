@@ -8,11 +8,11 @@ import useActiveSection from "@/hooks/useActiveSection";
 import { MdMenu, MdClose } from "react-icons/md";
 import { useDarkMode } from "../DarkModeProvider";
 
-export default function Navbar() {
+export default function Navbar({ darkMode, setDarkMode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);;
   const activeSection = useActiveSection(0.2);
   const isScrolled = useScrollCheck();
-  const { darkMode, setDarkMode } = useDarkMode();
+
 
   const SCROLLED_COLOR = "black";
   const NOT_SCROLLED_COLOR = "white";
@@ -44,11 +44,7 @@ export default function Navbar() {
   };
 
   return (
-    <div
-      className={`${
-        darkMode ? "dark:bg-black dark:text-white" : ""
-      } fixed top-0 w-full z-10 bg-white bg-opacity-75`}
-    >
+    <div className="fixed top-0 w-full z-10 bg-white bg-opacity-75">
       {/* hamburger menu */}
       <div className="flex justify-end items-center md:hidden fixed z-50 right-3 top-3">
         <div className=" p-2">

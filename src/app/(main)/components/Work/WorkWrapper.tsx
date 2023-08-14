@@ -6,7 +6,7 @@ function WorkWrapper() {
 
   return (
     <section id="work">
-      <div className="flex items-center justify-center ">
+      <div className="h-[100dvh] flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-24">
           {projectsData.map((project) => {
             return <WorkCard key={project.id} project={project} />;
