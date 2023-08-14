@@ -10,8 +10,11 @@ import { useDarkMode } from "../DarkModeProvider";
 
 export default function Navbar({ darkMode, setDarkMode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);;
-  const activeSection = useActiveSection(0.2);
+  const activeSection = useActiveSection(0.5);
   const isScrolled = useScrollCheck();
+  
+
+  
 
 
   const SCROLLED_COLOR = "black";
@@ -27,7 +30,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
-        block: "start",
+        block: section === 'work'? 'start' : 'center',
       });
       setIsMenuOpen(false);
     } else {
@@ -70,7 +73,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         >
           <li
             className={`cursor-pointer ${
-              activeSection === "home" && "#8C52FF"
+              activeSection === "home" && "text-[#8C52FF]"
             }`}
             onClick={() => scrollToSection("home")}
           >
@@ -78,7 +81,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           </li>
           <li
             className={`cursor-pointer ${
-              activeSection === "about" && "#8C52FF"
+              activeSection === "about" && " text-[#8C52FF]"
             }`}
             onClick={() => scrollToSection("about")}
           >
@@ -86,7 +89,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           </li>
           <li
             className={`cursor-pointer ${
-              activeSection === "skill" && "#8C52FF"
+              activeSection === "skill" && " text-[#8C52FF]"
             }`}
             onClick={() => scrollToSection("skill")}
           >
@@ -94,7 +97,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           </li>
           <li
             className={`cursor-pointer ${
-              activeSection === "work" && "#8C52FF"
+              activeSection === "work" && " text-[#8C52FF]"
             }`}
             onClick={() => scrollToSection("work")}
           >

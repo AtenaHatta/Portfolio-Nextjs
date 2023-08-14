@@ -1,7 +1,7 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 
-export default function Footer() {
+export default function Contact() {
   return (
     <>
       <div

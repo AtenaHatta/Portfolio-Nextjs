@@ -2,7 +2,7 @@
 import Navbar from "./(main)/components/Navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Contact from "./(main)/components/ Contact/Contact";
+import Contact from "./(main)/components/Contact/Contact";
 import { DarkModeProvider } from "./(main)/components/DarkModeProvider";
 import { useState } from "react";
 

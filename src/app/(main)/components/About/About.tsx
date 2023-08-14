@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section id="about"> 
-    <div className="relative text-black flex items-center xs:flex-col md:flex-row justify-center h-[100dvh] ">
+    <div className="relative text-black flex items-center xs:flex-col md:flex-row justify-center h-[200dvh] ">
       <div className="bg-profile_img w-[170px] h-[220px] md:w-[400px] md:h-[500px] bg-contain relative">
         <div className="bg-about_img absolute -rotate-12 -top-36 -left-14 md:left-80  md:-top-32 w-[300px] h-[250px] md:w-[400px] md:h-[300px] bg-contain bg-no-repeat" />
       </div>
