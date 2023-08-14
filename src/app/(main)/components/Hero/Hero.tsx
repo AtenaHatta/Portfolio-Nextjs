@@ -4,7 +4,8 @@ import "./heroStyle.css";
 
 export default function Hero() {
   return (
-    <div className="mt-24 md:mt-56 mb-56">
+    <section id="home"> 
+    <div className="flex h-[100dvh] items-center">
       <div className="font-yesevaOne ml-1 md:ml-10">
         <h1 className="text-8xl md:text-7xl">
           I’m{" "}
@@ -37,11 +38,13 @@ export default function Hero() {
           </h2>
         </div>
         <div className="flex mt-4 space-x-4">
-          <SiReact className="w-12 h-12 md:w-14 md:h-14" />
+          <SiReact className="w-12 h-12 md:w-14 md:h-14 spin text-mainColor" />
           <SiTypescript className="w-12 h-12 md:w-14 md:h-14" />
         </div>
       </div>
 
     </div>
+    </section>
+
   );
 }

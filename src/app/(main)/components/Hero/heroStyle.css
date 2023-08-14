@@ -1,3 +1,4 @@
+/* Type Writer animation */
 h3 {
     position: relative;
     color: hsl(0, 0%, 100%);
@@ -34,3 +35,18 @@ h3 {
       border-right-color: transparent;
     }
   }
+
+
+/* React icon animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 10s linear infinite;
+}
