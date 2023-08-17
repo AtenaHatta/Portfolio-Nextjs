@@ -36,7 +36,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
     } else {
       console.error(`No element found with id ${section}`);
     }
-  };
+  };　　
 
   const toggleNightMode = () => {
     setDarkMode((prevState) => !prevState);
