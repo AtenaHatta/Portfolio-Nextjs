@@ -1,5 +1,6 @@
 import { SiReact, SiTypescript } from "react-icons/si";
-import "./heroStyle.css";
+import "./heroStyle.css"; 
+
 
 
 export default function Hero() {
