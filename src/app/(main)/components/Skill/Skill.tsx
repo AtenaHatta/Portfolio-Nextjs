@@ -1,11 +1,19 @@
+"use client"
 import React from "react";
 import IconsSection from "./IconsWrapper";
 import { frontendIcons, backendIcons, otherIcons } from "./Icons";
 
+import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
+
+
 export default function Skill() {
+
+  const { darkMode } = useDarkMode();
   return (
     <section id="skill">
-      <div className="h-[100dvh] text-black items-center flex flex-col justify-center min-h-screen xs:m-5">
+      <div className={`${
+          darkMode == "dark" ? "invert" : ""
+        }  bg-white text-black items-center flex flex-col justify-center py-12 md:py-0 md:h-[70vh]`}>
         <IconsSection title="Frontend" icons={frontendIcons} />
 
         <div className="flex mt-10">

@@ -1,12 +1,20 @@
+"use client"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
+import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
+
+
 
 export default function Contact() {
+
+  const { darkMode } = useDarkMode();
   return (
     <>
       <div
-        className="bg-white bg-opacity-75 rounded-lg text-black xs:text-3xl md:text-5xl space-y-2 md:space-y-6 
-        md:mb-10 flex flex-col items-end justify-end fixed bottom-0 right-0 p-1 md:p-4"
+        className={`${
+          darkMode == "dark" ? "invert" : ""
+        }   bg-white bg-opacity-75 rounded-lg text-black xs:text-3xl md:text-5xl space-y-2 md:space-y-6 
+        md:mb-10 flex flex-col items-end justify-end fixed bottom-0 right-0 p-1 md:p-4`}
       >
         <a
           href="https://github.com/AtenaHatta"

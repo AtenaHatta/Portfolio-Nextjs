@@ -1,23 +1,22 @@
-'use client';
-import { createContext, useContext, useEffect, useState } from 'react';
+"use client";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
-const DarkModeContext = createContext();
+type ThemeContextProviderProps = {
+  children: React.ReactNode;
+};
 
-export const DarkModeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+type DarkMode = "dark" | "light";
 
-  useEffect(() => {
-    const initialMode = document.documentElement.classList.contains('dark');
-    setDarkMode(initialMode);
-  }, []);
+type ThemeContext = {
+  darkMode: DarkMode;
+  setDarkMode: React.Dispatch<React.SetStateAction<DarkMode>>;
+};
+const DarkModeContext = createContext<ThemeContext | null>(null);
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
+export const ThemeContextProvider = ({
+  children,
+}: ThemeContextProviderProps) => {
+  const [darkMode, setDarkMode] = useState<DarkMode>("light");
 
   return (
     <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
@@ -27,5 +26,12 @@ export const DarkModeProvider = ({ children }) => {
 };
 
 export const useDarkMode = () => {
-  return useContext(DarkModeContext);
+  const context = useContext(DarkModeContext);
+
+  if (!context) {
+    throw new Error(
+      "Use theme context must be used within a themeContextProvider"
+    );
+  }
+  return context;
 };

@@ -6,19 +6,17 @@ import Link from "next/link";
 import useScrollCheck from "@/hooks/useScrollCheck";
 import useActiveSection from "@/hooks/useActiveSection";
 import { MdMenu, MdClose } from "react-icons/md";
-import { useDarkMode } from "../DarkModeProvider";
+import { useDarkMode } from "@/app/(main)/components/DarkModeProvider"
 
-export default function Navbar({ darkMode, setDarkMode }) {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);;
   const activeSection = useActiveSection(0.5);
-  const isScrolled = useScrollCheck();
-  
-
-  
-
-
+  const isScrolled = useScrollCheck(); 
   const SCROLLED_COLOR = "black";
   const NOT_SCROLLED_COLOR = "white";
+
+
+  const { darkMode, setDarkMode} = useDarkMode()
 
   const navIconStyles = {
     backgroundColor: isScrolled ? SCROLLED_COLOR : NOT_SCROLLED_COLOR,
@@ -40,7 +38,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
    
 
   const toggleNightMode = () => {
-    setDarkMode((prevState) => !prevState);
+    setDarkMode(darkMode == 'light' ? 'dark' : 'light');
   };
 
   const handleMenuClick = () => {
@@ -48,7 +46,9 @@ export default function Navbar({ darkMode, setDarkMode }) {
   };
 
   return (
-    <div className="fixed top-0 w-full z-10 bg-white bg-opacity-75">
+<div className={` ${
+          darkMode == "dark" ? "invert" : ""
+        } fixed top-0 w-full z-10 bg-white bg-opacity-75`}>
       {/* hamburger menu */}
       <div className="flex justify-end items-center md:hidden fixed z-50 right-3 top-3">
         <div className=" p-2">
@@ -65,7 +65,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
       {/* hamburger menu item */}
       <div>
         <ul
-          className={`md:flex md:justify-end md:pt-5 md:mr-16 text-xl md:text-lg smXl:space-x-8  items-center 
+          className={`font-yesevaOne md:flex md:justify-end md:pt-5 md:mr-16 text-xl md:text-lg smXl:space-x-8  items-center 
         ${
           isMenuOpen
             ? "block absolute w-full h-[100dvh] smXl:h-full bg-white text-black text-center z-20 space-y-14 pt-20"

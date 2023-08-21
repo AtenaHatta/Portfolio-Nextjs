@@ -2,6 +2,9 @@ import { AiFillGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
 import { Project } from "./data";
+import Image from "next/image";
+import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
+
 
 type WorkProps = {
   project: Project;
@@ -12,8 +15,10 @@ export default function Work({ project }: WorkProps) {
     return <div>No project data</div>;
   }
 
+  const { darkMode } = useDarkMode();
+
   return (
-    <div className="relative flex flex-col items-center p-3 w-[320px] md:w-[350px] h-[100%] md:h-auto  md:mb-0">
+    <div className="relative flex flex-col items-center p-3 w-[320px] md:w-[400px] h-[100%] md:h-auto  md:mb-0">
       <div className="flex justify-end text-2xl space-x-2 mb-2 md:mb-3 w-full items-center">
         {project.team && (
           <p className="border-2 border-stone-500 rounded-lg text-stone-500 px-2 text-xs">
@@ -28,7 +33,12 @@ export default function Work({ project }: WorkProps) {
         </Link>
       </div>
 
-      <div className="bg-myYoutube_img bg-contain bg-no-repeat w-[300px] h-[170px] md:w-[370px] md:h-[240px]" />
+      <img
+        className={`${
+          darkMode == "dark" ? "invert" : ""
+        }    bg-no-repeat w-[300px] h-[170px] md:w-[400px] md:h-full`}
+        src={project.image}
+      />
       <h1 className="text-3xl md:text-4xl font-yesevaOne py-1">
         {project.title}
       </h1>
