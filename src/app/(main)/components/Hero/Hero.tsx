@@ -19,13 +19,13 @@ export default function Hero() {
             <span className="block md:inline text-5xl md:text-7xl">
               ATENA HATTA
             </span>
-          </h1>
+          </h1> 
           <h1 className="text-5xl md:text-7xl text-[#3b3a3a]">
             <span className="block md:inline text-6xl md:text-5xl">
               A developer{" "}
             </span>
             with drive
-          </h1> 
+          </h1>
           <h3 className="flex text-xl md:text-xl animate-typewriter text-[#6b6a6a]">
             Coding dreams into reality
           </h3>
