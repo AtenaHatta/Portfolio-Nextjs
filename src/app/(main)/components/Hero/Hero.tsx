@@ -25,7 +25,7 @@ export default function Hero() {
               A developer{" "}
             </span>
             with drive
-          </h1>
+          </h1> 
           <h3 className="flex text-xl md:text-xl animate-typewriter text-[#6b6a6a]">
             Coding dreams into reality
           </h3>
