@@ -1,17 +1,12 @@
-"use client";
 import { SiNextdotjs, SiReact, SiTypescript } from "react-icons/si";
-import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
 import "./heroStyle.css";
 
 export default function Hero() {
-  const { darkMode } = useDarkMode();
 
   return (
     <section id="home">
       <div
-        className={` ${
-          darkMode == "dark" ? "invert" : ""
-        }  flex h-[105dvh] items-center bg-white`}
+        className="flex h-[105dvh] items-center bg-white"
       >
         <div className="font-yesevaOne ml-1 md:ml-10">
           <h1 className="text-7xl">

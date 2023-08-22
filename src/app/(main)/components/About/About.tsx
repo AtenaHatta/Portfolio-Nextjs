@@ -9,9 +9,7 @@ export default function About({ className = "" }) {
     <section id="about">
       <div className={`about ${className}`}>
         <div
-          className={`relative ${
-            darkMode == "dark" ? "invert" : ""
-          }  text-black bg-white flex items-center flex-col md:flex-row justify-center py-12 md:py-0 md:h-[70vh]`}
+          className="relative  text-black bg-white flex items-center flex-col md:flex-row justify-center py-12 md:py-80 md:h-full "
         >
           <div
             className={`${

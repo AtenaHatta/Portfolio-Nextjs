@@ -32,11 +32,12 @@ export default function Work({ project }: WorkProps) {
         </Link>
       </div>
 
-      <img
-        className={`${
-          darkMode == "dark" ? "invert" : ""
-        }    bg-no-repeat w-[300px] h-[170px] md:w-[400px] md:h-full`}
+      <Image
+        className={`${darkMode == "dark" ? "invert" : ""}bg-no-repeat w-[300px] h-[170px] md:w-[400px] md:h-ful`}
         src={project.image}
+        width={300}
+        height={170}
+        alt={project.title}
       />
       <h1 className="text-3xl md:text-4xl font-yesevaOne py-1">
         {project.title}

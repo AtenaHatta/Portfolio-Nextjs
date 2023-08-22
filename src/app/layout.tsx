@@ -1,8 +1,6 @@
 "use client";
-import Navbar from "./(main)/components/Navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Contact from "./(main)/components/Contact/Contact";
 import { ThemeContextProvider } from "./(main)/components/DarkModeProvider";
 import { useState } from "react";
 
@@ -25,11 +23,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <ThemeContextProvider>
         <body className={inter.className}>
           <div
-            className={`${darkMode ? "dark:bg-black dark:text-white" : ""} `}
+            className={`${darkMode ? "dark:bg-black dark:text-white" : ""}  `}
           >
-            <Navbar />
             {children}
-            <Contact />
           </div>
         </body>
       </ThemeContextProvider>
