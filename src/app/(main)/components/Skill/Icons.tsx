@@ -24,7 +24,7 @@ import {
   const frontendIcons = [
     { icon: SiReact, name: "React", color: "#8C52FF" },
     { icon: SiTypescript, name: "TypeScript", color: "#8C52FF" },
-    { icon: SiNextdotjs, name: "Nextjs" },
+    { icon: SiNextdotjs, name: "Nextjs",color: "#8C52FF" },
     { icon: SiRedux, name: "Redux" },
     { icon: SiJavascript, name: "JavaScript" },
     { icon: SiHtml5, name: "HTML" },

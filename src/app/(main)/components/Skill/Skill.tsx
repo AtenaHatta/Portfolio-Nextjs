@@ -13,7 +13,7 @@ export default function Skill() {
     <section id="skill">
       <div className={`${
           darkMode == "dark" ? "invert" : ""
-        }  bg-white text-black items-center flex flex-col justify-center py-12 md:py-0 md:h-[70vh]`}>
+        }  bg-white text-black items-center flex flex-col justify-center px-2 py-12 md:py-0 md:h-[70vh]`}>
         <IconsSection title="Frontend" icons={frontendIcons} />
 
         <div className="flex mt-10">

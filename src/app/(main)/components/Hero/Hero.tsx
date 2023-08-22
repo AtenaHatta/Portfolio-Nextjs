@@ -1,5 +1,5 @@
 "use client";
-import { SiReact, SiTypescript } from "react-icons/si";
+import { SiNextdotjs, SiReact, SiTypescript } from "react-icons/si";
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
 import "./heroStyle.css";
 
@@ -21,15 +21,15 @@ export default function Hero() {
             </span>
           </h1> 
           <h1 className="text-5xl md:text-7xl text-[#3b3a3a]">
-            <span className="block md:inline text-6xl md:text-5xl">
+            <span className="block md:inline text-6xl md:text-7xl">
               A developer{" "}
             </span>
             with drive
           </h1>
-          <h3 className="flex text-xl md:text-xl animate-typewriter text-[#6b6a6a]">
+          <h3 className="flex text-base md:text-7xl animate-typewriter text-[#6b6a6a] tracking-tighter">
             Coding dreams into reality
           </h3>
-          <div className="text-base md:text-xl my-1 md:my-4 text-[#383838]">
+          <div className="text-sm md:text-2xl my-1 md:my-4 text-[#383838]">
             <h2>
               I stay up-to-date with{" "}
               <span className="block md:inline">
@@ -46,6 +46,7 @@ export default function Hero() {
           </div>
           <div className="flex mt-4 space-x-4">
             <SiReact className="w-12 h-12 md:w-14 md:h-14 spin text-mainColor" />
+            <SiNextdotjs className="w-12 h-12 md:w-14 md:h-14" />
             <SiTypescript className="w-12 h-12 md:w-14 md:h-14" />
           </div>
         </div>

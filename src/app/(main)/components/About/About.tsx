@@ -10,7 +10,7 @@ export default function About() {
       <div
         className={`relative ${
           darkMode == "dark" ? "invert" : ""
-        }  text-black bg-white flex items-center xs:flex-col md:flex-row justify-center py-12 md:py-0 md:h-[70vh]`}
+        }  text-black bg-white flex items-center flex-col md:flex-row justify-center py-12 md:py-0 md:h-[70vh]`}
       >
         <div
           className={`${
@@ -20,11 +20,11 @@ export default function About() {
           <div
             className={` ${
               darkMode == "dark" ? "invert" : ""
-            }   bg-about_img  absolute -rotate-12 -top-36 -left-14 md:left-80  md:-top-32 w-[300px] h-[250px] md:w-[400px] md:h-[300px] bg-contain bg-no-repeat`}
+            }   bg-about_img  absolute -rotate-12 -top-24 -left-14 md:left-80  md:-top-32 w-[200px] h-[250px] md:w-[400px] md:h-[300px] bg-contain bg-no-repeat`}
           />
         </div>
 
-        <div className="flex flex-col items-left justify-center xs:w-[80%] md:w-[45%] md:ml-5">
+        <div className="flex flex-col items-left justify-center w-[80%] md:w-[45%] md:ml-5">
           <p className="xs:text-xs md:text-base my-2 md:my-5">
             I&apos;m a{" "}
             <span className="text-sm md:text-xl font-yesevaOne">
@@ -53,13 +53,13 @@ export default function About() {
           <div className="flex">
             <button
               className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
-            text-white xs:py-2 md:py-2 xs:px-2 md:px-4"
+            text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base"
             >
               <a href="mailto:hattaatena@hotmail.com">Contact</a>
             </button>
             <button
               className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
-            text-white xs:py-2 md:py-2 xs:px-2 md:px-4 ml-5"
+            text-white xs:py-2 md:py-2 xs:px-2 md:px-4 ml-5 text-xs md:text-base"
             >
               <a target="_blank" rel="noopener noreferrer">
                 Resume
