@@ -12,8 +12,6 @@ type WorkProps = {
 export default function Work({ project }: WorkProps) {
   const { darkMode } = useDarkMode();
 
-
-  
   if (!project) {
     return <div>No project data</div>;
   }

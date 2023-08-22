@@ -21,7 +21,7 @@ export default function Hero() {
             </span>
           </h1> 
           <h1 className="text-5xl md:text-7xl text-[#3b3a3a]">
-            <span className="block md:inline text-6xl md:text-7xl">
+            <span className="block md:inline text-5xl md:text-7xl">
               A developer{" "}
             </span>
             with drive
