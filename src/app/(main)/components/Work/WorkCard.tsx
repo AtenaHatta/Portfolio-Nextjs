@@ -5,17 +5,18 @@ import { Project } from "./data";
 import Image from "next/image";
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
 
-
 type WorkProps = {
   project: Project;
 };
 
 export default function Work({ project }: WorkProps) {
+  const { darkMode } = useDarkMode();
+
+
+  
   if (!project) {
     return <div>No project data</div>;
   }
-
-  const { darkMode } = useDarkMode();
 
   return (
     <div className="relative flex flex-col items-center p-3 w-[320px] md:w-[400px] h-[100%] md:h-auto  md:mb-0">
