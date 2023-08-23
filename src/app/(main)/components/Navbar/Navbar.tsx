@@ -65,7 +65,7 @@ export default function Navbar() {
 
         {/* hamburger menu item */}
           <ul
-            className={`font-yesevaOne md:flex md:max-w-[1560px] md:mx-auto md:justify-end md:pt-5  text-xl md:text-lg smXl:space-x-8  items-center 
+            className={`md:pr-5 font-yesevaOne md:flex md:max-w-[1560px] md:mx-auto md:justify-end md:pt-5  text-xl md:text-lg smXl:space-x-8  items-center 
         ${
           isMenuOpen
             ? "block absolute w-full h-[100dvh] smXl:h-full bg-white text-black text-center z-20 space-y-14 pt-20"
@@ -105,11 +105,12 @@ export default function Navbar() {
               WORK
             </li>
             <li>
-              <button onClick={toggleNightMode}>
+              <button aria-label="darkModeBtn" onClick={toggleNightMode}>
                 {darkMode ? <MdWbSunny /> : <MdDarkMode />}
               </button>
             </li>
-            <li className="bg-black mx-auto text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-1 md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm">
+            <li className="bg-black mx-auto text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-1
+             md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm">
               <Link href="/resume_AtenaHatta.pdf">RESUME</Link>
             </li>
           </ul>

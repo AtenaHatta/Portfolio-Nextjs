@@ -1,6 +1,6 @@
 "use client";
-
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
+import Link from "next/link";
 
 export default function About({ className = "" }) {
   const { darkMode } = useDarkMode();
@@ -8,9 +8,7 @@ export default function About({ className = "" }) {
   return (
     <section id="about">
       <div className={`about ${className}`}>
-        <div
-          className="relative  text-black bg-white flex items-center flex-col md:flex-row justify-center py-12 md:py-80 md:h-full "
-        >
+        <div className="relative text-black bg-white flex items-center flex-col md:flex-row justify-center py-12 md:py-80 md:h-full">
           <div
             className={`${
               darkMode == "dark" ? "invert" : ""
@@ -19,7 +17,7 @@ export default function About({ className = "" }) {
             <div
               className={` ${
                 darkMode == "dark" ? "invert" : ""
-              }   bg-about_img  absolute -rotate-12 -top-24 -left-14 md:left-80  md:-top-32 w-[200px] h-[250px] md:w-[400px] md:h-[300px] bg-contain bg-no-repeat`}
+              }   bg-about_img  absolute -rotÏte-12 -top-24 -left-14 md:left-80  md:-top-32 w-[200px] h-[250px] md:w-[400px] md:h-[300px] bg-contain bg-no-repeat`}
             />
           </div>
 
@@ -30,7 +28,7 @@ export default function About({ className = "" }) {
                 Front-End Developer{" "}
               </span>
               with a strong focus on{" "}
-              <span className="text-sm md:text-xl font-yesevaOne">React</span>
+              <span className="text-sm md:text-xl font-yesevaOne">React</span>{" "}
               and{" "}
               <span className="text-sm md:text-xl font-yesevaOne">
                 TypeScript
@@ -40,7 +38,7 @@ export default function About({ className = "" }) {
               <span className="text-sm md:text-xl text-mainColor font-yesevaOne">
                 design planning{" "}
               </span>
-              with Figma,
+              with Figma,{" "}
               <span className="text-sm md:text-xl text-mainColor font-yesevaOne">
                 performance-focused coding
               </span>
@@ -50,20 +48,20 @@ export default function About({ className = "" }) {
               efficiency in production.
             </p>
             <div className="flex">
-              <button
+              <a
+                href="mailto:hattaatena@gmail.com"
                 className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
-            text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base"
+             text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base z-[1000]"
               >
-                <a href="mailto:hattaatena@hotmail.com">Contact</a>
-              </button>
-              <button
+                Contact
+              </a>
+              <Link
+                href="/resume_AtenaHatta.pdf"
                 className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
-            text-white xs:py-2 md:py-2 xs:px-2 md:px-4 ml-5 text-xs md:text-base"
+                text-white xs:py-2 md:py-2 xs:px-2 md:px-4 ml-5 text-xs md:text-base"
               >
-                <a target="_blank" rel="noopener noreferrer">
-                  Resume
-                </a>
-              </button>
+                RESUME
+              </Link>
             </div>
           </div>
         </div>
