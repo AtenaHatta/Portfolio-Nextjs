@@ -1,35 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+    <img src="https://ik.imagekit.io/atcan/Screenshot%202023-08-22%20at%209.07.42%20PM.png?updatedAt=1692763721768" width="450" height="100%/">
+    <img src="https://ik.imagekit.io/atcan/Screenshot%202023-08-22%20at%209.07.42%20PM.png?updatedAt=1692763721768" width="750" height="100%/">
+</p> 
 
-## Getting Started
+<p id="description">My portfolio</p>
 
-First, run the development server:
+<h2>🚀 Demo</h2>
+https://atenahatta.vercel.app/
+<br>
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<h2>🧐 Features</h2>
+🌗 Dark Mode: <br>
+　　The navigation bar contains a user-friendly Dark-Mode button.<br>
+　　All colors are inverted with a 100% filter<br><br>
+   
+📕 Navigation bar: <br>
+　　The contents in the navigation bar <b>changes color for each currently positioned section</b> and indicates their location<br>
+　　Pressing the table of contents smoothly scrolls and gently fades in the content of the section.<br><br>
+   
+💻 Performance: <br>
+　　Utilizing the Next.js app router and employing SSR to enhance initial load speed.<br>
+　　By utilizing TypeScript and optimizing all images, it is possible to achieve a faster runtime processing speed<br><br>
+  
+🎨 Simplicity in color palette:<br>
+　　The design features a palette of black, white, gray, and purple, achieving a simple yet clear aesthetic. <br>
+　　Prioritizing user-friendliness, the layout offers easy navigation, clear elements, and a balanced, graceful simplicity.<br><br>
+  
+📱 Responsive Design: <br>
+　　Regardless of whether you're using a computer, tablet, or phone, <br>
+　　the app is designed to adjust and fit your screen perfectly.<br>
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. cd api</p>
+
+```
+npm i 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>2. cd server</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm i & npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  
+  
+<h2>💻 Built with</h2>
 
-## Learn More
+Technologies used in the project:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# Portfolio-Nextjs
+*   Next.js 13
+*   TypeScript
+*   TailwindCSS
