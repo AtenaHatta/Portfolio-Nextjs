@@ -17,7 +17,7 @@ https://atenahatta.vercel.app/
    
 📕 Navigation bar: <br>
 　　The contents in the navigation bar <b>changes color for each currently positioned section</b> and indicates their location<br>
-　　Pressing the table of contents smoothly scrolls and gently fades in the content of the section.<br><br>
+　　Pressing the table of contents <b>smoothly scrolls</b> and gently <b>fades-in</b> the content of the section.<br><br>
    
 💻 Performance: <br>
 　　Utilizing the Next.js app router and employing SSR to enhance initial load speed.<br>
