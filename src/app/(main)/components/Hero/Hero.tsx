@@ -12,7 +12,7 @@ export default function Hero() {
           <h1 className="text-7xl">
             Hi, I&apos;m{" "}
             <span className="block md:inline text-5xl md:text-7xl">
-              ATENA HATTA.
+              ATENA HATTA
             </span>
           </h1> 
           <h1 className="text-5xl md:text-7xl text-[#3b3a3a]">

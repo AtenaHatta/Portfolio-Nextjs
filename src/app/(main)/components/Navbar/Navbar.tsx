@@ -1,4 +1,5 @@
 "use client";
+import './navLinkLineStyle.css'
 import { MdDarkMode } from "react-icons/md";
 import { MdWbSunny } from "react-icons/md";
 import { useState } from "react";
@@ -55,7 +56,7 @@ export default function Navbar() {
           <div className=" p-2">
             <button onClick={handleMenuClick}>
               {isMenuOpen ? (
-                <MdClose className="text-4xl cursor-pointer bg-opacity-75 bg-white" />
+                <MdClose className="text-4xl cursor-pointer lineStyle bg-opacity-75 bg-white" />
               ) : (
                 <MdMenu className="text-4xl cursor-pointer bg-opacity-75 bg-white" />
               )}
@@ -73,13 +74,13 @@ export default function Navbar() {
         } `}
         >
           <li
-            className={`cursor-pointer ${activeSection === "home" && "text-"}`}
+            className={`cursor-pointer lineStyle ${activeSection === "home" && "text-"}`}
             onClick={() => scrollToSection("home")}
           >
             HOME
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer lineStyle ${
               activeSection === "about" && " text-mainColor"
             }`}
             onClick={() => scrollToSection("about")}
@@ -87,7 +88,7 @@ export default function Navbar() {
             ABOUT
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer lineStyle ${
               activeSection === "skill" && " text-mainColor"
             }`}
             onClick={() => scrollToSection("skill")}
@@ -95,7 +96,7 @@ export default function Navbar() {
             SKILL
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer lineStyle ${
               activeSection === "work" && " text-mainColor"
             }`}
             onClick={() => scrollToSection("work")}

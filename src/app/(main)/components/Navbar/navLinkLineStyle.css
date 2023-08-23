@@ -1,0 +1,23 @@
+.lineStyle {
+    position: relative;
+    color: dark;
+    text-decoration: none;
+  }
+  .lineStyle:hover {
+    color: black;
+  }
+  .lineStyle::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #6923E1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .lineStyle:hover::before {
+    transform: scaleX(1);
+  }

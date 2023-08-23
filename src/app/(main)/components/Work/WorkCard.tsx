@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { AiFillGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
@@ -11,30 +11,40 @@ type WorkProps = {
 };
 
 export default function Work({ project }: WorkProps) {
-  const { darkMode } = useDarkMode();  
+  const { darkMode } = useDarkMode();
 
   if (!project) {
     return <div>No project data</div>;
   }
 
   return (
-    <div className="relative flex flex-col items-center p-3 w-[320px] md:w-[400px] h-[100%] md:h-auto  md:mb-0">
+    <div className="relative flex flex-col items-center p-3 w-[320px] md:w-[400px] h-[100%] md:h-auto md:mb-0">
       <div className="flex justify-end text-2xl space-x-2 mb-2 md:mb-3 w-full items-center">
         {project.team && (
           <p className="border-2 border-stone-500 rounded-lg text-stone-500 px-2 text-xs">
             {project.team}
           </p>
         )}
-        <Link href={project.githubLink} className="hover:text-mainColor" aria-label="github">
+        <Link
+          href={project.githubLink}
+          className="hover:text-mainColor"
+          aria-label="github"
+        >
           <AiFillGithub />
         </Link>
-        <Link href={project.demoLink} className="hover:text-mainColor" aria-label="demo">
+        <Link
+          href={project.demoLink}
+          className="hover:text-mainColor"
+          aria-label="demo"
+        >
           <FiExternalLink />
         </Link>
       </div>
 
       <Image
-        className={`${darkMode == "dark" ? "invert" : ""} bg-no-repeat w-[300px] h-[170px] md:w-[400px] md:h-ful`}
+        className={`${
+          darkMode == "dark" ? "invert" : ""
+        } bg-no-repeat w-[300px] h-[170px] md:w-[400px] md:h-ful`}
         src={project.image}
         width={300}
         height={170}
