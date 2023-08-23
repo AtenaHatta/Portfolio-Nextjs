@@ -20,6 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <html lang="en">
+      
       <ThemeContextProvider>
         <body className={inter.className}>
           <div
