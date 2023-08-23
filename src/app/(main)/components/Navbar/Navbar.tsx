@@ -111,7 +111,11 @@ export default function Navbar() {
             className="bg-black mx-auto text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-1
              md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm"
           >
-            <Link href="/resume_AtenaHatta.pdf">RESUME</Link>
+            <Link 
+              href="/resume/resume_AtenaHatta.pdf"
+              target="_blank"
+              aria-label="resume"
+              rel="noopener noreferrer">RESUME</Link>
           </li>
         </ul>
       </div>
