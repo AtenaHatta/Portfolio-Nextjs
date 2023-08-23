@@ -22,15 +22,15 @@ import {
   } from "react-icons/si";
   
   const frontendIcons = [
-    { icon: SiReact, name: "React", color: "#8C52FF" },
-    { icon: SiTypescript, name: "TypeScript", color: "#8C52FF" },
-    { icon: SiNextdotjs, name: "Nextjs",color: "#8C52FF" },
+    { icon: SiReact, name: "React", color: "#6923E1" },
+    { icon: SiTypescript, name: "TypeScript", color: "#6923E1" },
+    { icon: SiNextdotjs, name: "Nextjs",color: "#6923E1" },
     { icon: SiRedux, name: "Redux" },
     { icon: SiJavascript, name: "JavaScript" },
     { icon: SiHtml5, name: "HTML" },
     { icon: SiCss3, name: "CSS" },
     { icon: SiSass, name: "Sass" },
-    { icon: SiTailwindcss, name: "Tailwind", color: "#8C52FF" },
+    { icon: SiTailwindcss, name: "Tailwind", color: "#6923E1" },
     { icon: SiMui, name: "MaterialUI" },
   ];
   
@@ -43,7 +43,7 @@ import {
   
   const otherIcons = [
     { icon: SiGit, name: "Git" },
-    { icon: SiFigma, name: "Figma", color: "#8C52FF" },
+    { icon: SiFigma, name: "Figma", color: "#6923E1" },
     { icon: SiVercel, name: "Vercel" },
     { icon: SiNetlify, name: "Netlify" },
   ];

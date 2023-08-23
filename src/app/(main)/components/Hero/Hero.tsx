@@ -21,9 +21,9 @@ export default function Hero() {
             </span>
             with drive
           </h1>
-          <h3 className="flex text-base md:text-7xl animate-typewriter text-[#6b6a6a] tracking-tighter">
+          <h2 className="flex text-base md:text-7xl animate-typewriter text-[#6b6a6a] tracking-tighter">
             Coding dreams into reality
-          </h3>
+          </h2>
           <div className="text-sm md:text-2xl my-1 md:my-4 text-[#383838]">
             <h2>
               I stay up-to-date with{" "}

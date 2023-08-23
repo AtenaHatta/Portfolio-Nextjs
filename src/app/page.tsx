@@ -7,7 +7,7 @@ import Skill from "../app/(main)/components/Skill/Skill";
 import WorkWrapper from "../app/(main)/components/Work/WorkWrapper";
 import Footer from "../app/(main)/components/Footer/Footer";
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const { darkMode } = useDarkMode();
@@ -37,6 +37,7 @@ export default function Home() {
     };
   }, []);
 
+
   return (
     <>
       <Navbar />
@@ -49,14 +50,12 @@ export default function Home() {
         <About className="fadeIn" />
         <Skill className="fadeIn" />
         <WorkWrapper className="fadeIn" />
-
         <div
           style={{ right: "calc(50% - 720px)" }}
           className="fixed bottom-0 z-50 "
         >
           <Contact />
         </div>
-
         <Footer />
       </div>
     </>

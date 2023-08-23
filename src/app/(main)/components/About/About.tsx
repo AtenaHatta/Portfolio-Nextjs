@@ -50,6 +50,7 @@ export default function About({ className = "" }) {
             <div className="flex">
               <a
                 href="mailto:hattaatena@gmail.com"
+                aria-label="email"
                 className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
              text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base z-[1000]"
               >
@@ -57,6 +58,7 @@ export default function About({ className = "" }) {
               </a>
               <Link
                 href="/resume_AtenaHatta.pdf"
+                aria-label="resume"
                 className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
                 text-white xs:py-2 md:py-2 xs:px-2 md:px-4 ml-5 text-xs md:text-base"
               >

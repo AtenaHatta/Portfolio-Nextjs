@@ -15,18 +15,21 @@ export default function Contact() {
     >
       <a
         href="https://github.com/AtenaHatta"
+        aria-label="github"
         className="rightmenu-icon2 hover:bg-black hover:text-white rounded-md"
       >
         <AiFillGithub />
       </a>
       <a
         href="https://www.linkedin.com/in/atenahatta/"
+        aria-label="linkedin"
         className="rightmenu-icon2 hover:bg-black hover:text-white rounded-md"
       >
         <AiFillLinkedin />
       </a>
       <a
         href="mailto:hattaatena@hotmail.com"
+        aria-label="email"
         className="rightmenu-icon2 hover:bg-black hover:text-white rounded-md"
       >
         <HiOutlineMail />

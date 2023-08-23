@@ -46,7 +46,7 @@ export default function Navbar() {
   return (
     <nav>
       <div
-        className={` ${
+        className={`${
           darkMode == "dark" ? "invert" : ""
         } fixed top-0 w-full z-10 bg-white bg-opacity-75`}
       >
@@ -64,57 +64,57 @@ export default function Navbar() {
         </div>
 
         {/* hamburger menu item */}
-          <ul
-            className={`md:pr-5 font-yesevaOne md:flex md:max-w-[1560px] md:mx-auto md:justify-end md:pt-5  text-xl md:text-lg smXl:space-x-8  items-center 
+        <ul
+          className={`md:pr-5 font-yesevaOne md:flex md:max-w-[1560px] md:mx-auto md:justify-end md:pt-5  text-xl md:text-lg smXl:space-x-8  items-center 
         ${
           isMenuOpen
             ? "block absolute w-full h-[100dvh] smXl:h-full bg-white text-black text-center z-20 space-y-14 pt-20"
             : "hidden"
         } `}
+        >
+          <li
+            className={`cursor-pointer ${activeSection === "home" && "text-"}`}
+            onClick={() => scrollToSection("home")}
           >
-            <li
-              className={`cursor-pointer ${
-                activeSection === "home" && "text-[#8C52FF]"
-              }`}
-              onClick={() => scrollToSection("home")}
-            >
-              HOME
-            </li>
-            <li
-              className={`cursor-pointer ${
-                activeSection === "about" && " text-[#8C52FF]"
-              }`}
-              onClick={() => scrollToSection("about")}
-            >
-              ABOUT
-            </li>
-            <li
-              className={`cursor-pointer ${
-                activeSection === "skill" && " text-[#8C52FF]"
-              }`}
-              onClick={() => scrollToSection("skill")}
-            >
-              SKILL
-            </li>
-            <li
-              className={`cursor-pointer ${
-                activeSection === "work" && " text-[#8C52FF]"
-              }`}
-              onClick={() => scrollToSection("work")}
-            >
-              WORK
-            </li>
-            <li>
-              <button aria-label="darkModeBtn" onClick={toggleNightMode}>
-                {darkMode ? <MdWbSunny /> : <MdDarkMode />}
-              </button>
-            </li>
-            <li className="bg-black mx-auto text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-1
-             md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm">
-              <Link href="/resume_AtenaHatta.pdf">RESUME</Link>
-            </li>
-          </ul>
-        </div>
+            HOME
+          </li>
+          <li
+            className={`cursor-pointer ${
+              activeSection === "about" && " text-mainColor"
+            }`}
+            onClick={() => scrollToSection("about")}
+          >
+            ABOUT
+          </li>
+          <li
+            className={`cursor-pointer ${
+              activeSection === "skill" && " text-mainColor"
+            }`}
+            onClick={() => scrollToSection("skill")}
+          >
+            SKILL
+          </li>
+          <li
+            className={`cursor-pointer ${
+              activeSection === "work" && " text-mainColor"
+            }`}
+            onClick={() => scrollToSection("work")}
+          >
+            WORK
+          </li>
+          <li>
+            <button aria-label="darkModeBtn" onClick={toggleNightMode}>
+              {darkMode == "dark" ? <MdWbSunny /> : <MdDarkMode />}
+            </button>
+          </li>
+          <li
+            className="bg-black mx-auto text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-1
+             md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm"
+          >
+            <Link href="/resume_AtenaHatta.pdf">RESUME</Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

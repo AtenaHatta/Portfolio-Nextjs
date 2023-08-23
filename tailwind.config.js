@@ -4,21 +4,21 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "profile_img": "url('https://ik.imagekit.io/atcan/profilephoto.jpg?updatedAt=1689406165811')",
-        "about_img": "url('https://ik.imagekit.io/atcan/about.png?updatedAt=1689406114260')",
-        "myYoutube_img": "url('https://ik.imagekit.io/atcan/Group%201%20(1).png?updatedAt=1690743749251')",
+        "profile_img": "url(/images/profilephoto.webp)",
+        "about_img": "url(/images/about.webp)",
+        "myYoutube_img": "url(/images/youtube.webp)",
       },
       fontFamily: {
         yesevaOne: ['Yeseva One', 'cursive'],
       },
       textColor: {
-        mainColor: "#8C52FF", 
+        mainColor: "#6923E1", 
       },
       borderColor: { 
-        borderMainColor: '#8C52FF',
+        borderMainColor: '#6923E1',
       },
       letterSpacing: {
-        'extra-wide': '0.15em', // or whatever value you desire
+        'extra-wide': '0.15em',
         'super-wide': '0.25em',
       },
       screens: {

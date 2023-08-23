@@ -1,3 +1,4 @@
+'use client'
 import { AiFillGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
@@ -12,6 +13,9 @@ type WorkProps = {
 export default function Work({ project }: WorkProps) {
   const { darkMode } = useDarkMode();
 
+  console.log(darkMode);
+  
+
   if (!project) {
     return <div>No project data</div>;
   }
@@ -24,16 +28,16 @@ export default function Work({ project }: WorkProps) {
             {project.team}
           </p>
         )}
-        <Link href={project.githubLink} className="hover:text-mainColor">
+        <Link href={project.githubLink} className="hover:text-mainColor" aria-label="github">
           <AiFillGithub />
         </Link>
-        <Link href={project.demoLink} className="hover:text-mainColor">
+        <Link href={project.demoLink} className="hover:text-mainColor" aria-label="demo">
           <FiExternalLink />
         </Link>
       </div>
 
       <Image
-        className={`${darkMode == "dark" ? "invert" : ""}bg-no-repeat w-[300px] h-[170px] md:w-[400px] md:h-ful`}
+        className={`${darkMode == "dark" ? "invert" : ""} bg-no-repeat w-[300px] h-[170px] md:w-[400px] md:h-ful`}
         src={project.image}
         width={300}
         height={170}
