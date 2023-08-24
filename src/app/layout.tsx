@@ -5,8 +5,8 @@ import { ThemeContextProvider } from "./(main)/components/DarkModeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio",
-  description: "Atena's portfolio",
+  title: "Atena's portfolio",
+  description: "Portfolio",
 };
 
 interface RootLayoutProps {
@@ -16,10 +16,11 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <ThemeContextProvider>
-        <body className={inter.className}>
-            {children}
-        </body>
+        <body className={inter.className}>{children}</body>
       </ThemeContextProvider>
     </html>
   );
