@@ -4,7 +4,7 @@ import "./heroStyle.css";
 export default function Hero() {
 
   return (
-    <section id="home">
+    <section id="home"> 
       <div
         className="flex h-[105dvh] items-center bg-white"
       >
