@@ -1,5 +1,4 @@
 <p align="center">
-    <img src="https://ik.imagekit.io/atcan/Screenshot%202023-08-22%20at%209.07.42%20PM.png?updatedAt=1692763721768" width="450" height="100%/">
     <img src="https://ik.imagekit.io/atcan/Screenshot%202023-08-22%20at%209.07.42%20PM.png?updatedAt=1692763721768" width="750" height="100%/">
 </p> 
 
