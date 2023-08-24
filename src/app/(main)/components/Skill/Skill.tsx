@@ -7,7 +7,7 @@ export default function Skill({ className = "" }) {
   return (
     <section id="skill">
       <div
-        className="  bg-white text-black items-center flex flex-col justify-center px-2 py-12 md:pb-80 md:pt-40  md:h-full"
+        className="bg-white text-black items-center flex flex-col justify-center px-2 py-12 md:pb-80 md:pt-40  md:h-full"
       >
         <div className={`work ${className}`}>
           <IconsSection title="Frontend" icons={frontendIcons} />
