@@ -24,7 +24,7 @@ const IconsSection: React.FC<IconsSectionProps> = ({ title, icons }) => {
             className="flex flex-col justify-center items-center xs:px-5 xs:py-3 md:px-5 xs:w-16 md:w-24 text-center"
           >
             {React.createElement(item.icon, {
-              className: "xs:text-4xl md:text-5xl p-1",
+              className: "xs:text-3xl md:text-5xl p-1",
               style: { color: item.color },
             })}
             <span className="text-xs">{item.name}</span>

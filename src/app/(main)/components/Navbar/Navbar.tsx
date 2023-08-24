@@ -1,5 +1,5 @@
 "use client";
-import './navLinkLineStyle.css'
+import "./navLinkLineStyle.css";
 import { MdDarkMode } from "react-icons/md";
 import { MdWbSunny } from "react-icons/md";
 import { useState } from "react";
@@ -74,7 +74,9 @@ export default function Navbar() {
         } `}
         >
           <li
-            className={`cursor-pointer lineStyle ${activeSection === "home" && "text-"}`}
+            className={`cursor-pointer lineStyle ${
+              activeSection === "home" && "text-"
+            }`}
             onClick={() => scrollToSection("home")}
           >
             HOME
@@ -108,16 +110,20 @@ export default function Navbar() {
               {darkMode == "dark" ? <MdWbSunny /> : <MdDarkMode />}
             </button>
           </li>
-          <li
-            className="bg-black mx-auto text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-1
-             md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm"
+
+          <Link
+            href="/resume/resume_AtenaHatta.pdf"
+            target="_blank"
+            aria-label="resume"
+            rel="noopener noreferrer"
           >
-            <Link 
-              href="/resume/resume_AtenaHatta.pdf"
-              target="_blank"
-              aria-label="resume"
-              rel="noopener noreferrer">RESUME</Link>
-          </li>
+            <li
+              className="bg-black mx-auto text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-1
+             md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm"
+            >
+              RESUME
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>
