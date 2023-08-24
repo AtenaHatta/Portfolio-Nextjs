@@ -56,7 +56,7 @@ export default function About({ className = "" }) {
               >
                 Contact
               </a>
-              <Link
+              <a
                 href="/resume/resume_AtenaHatta.pdf"
                 target="_blank"
                 aria-label="resume"
@@ -65,7 +65,7 @@ export default function About({ className = "" }) {
                 text-white xs:py-2 md:py-2 xs:px-2 md:px-4 ml-5 text-xs md:text-base"
               >
                 RESUME
-              </Link>
+              </a>
             </div>
           </div>
         </div>

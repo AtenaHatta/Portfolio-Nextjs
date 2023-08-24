@@ -111,7 +111,7 @@ export default function Navbar() {
             </button>
           </li>
 
-          <Link
+          <a
             href="/resume/resume_AtenaHatta.pdf"
             target="_blank"
             aria-label="resume"
@@ -123,7 +123,7 @@ export default function Navbar() {
             >
               RESUME
             </li>
-          </Link>
+          </a>
         </ul>
       </div>
     </nav>
