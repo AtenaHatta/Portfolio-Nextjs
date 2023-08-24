@@ -65,66 +65,76 @@ export default function Navbar() {
         </div>
 
         {/* hamburger menu item */}
-        <ul
-          className={`md:pr-5 font-yesevaOne md:flex md:max-w-[1560px] md:mx-auto md:justify-end md:pt-5  text-xl md:text-lg smXl:space-x-8  items-center 
+        <div className="flex justify-end w-full md:max-w-[1560px] md:mx-auto md:justify-end items-center content-center md:p-5 ">
+          <ul
+            className={` md:pr-5 font-yesevaOne md:flex  text-xl md:text-lg md:space-x-10
         ${
           isMenuOpen
-            ? "block absolute w-full h-[100dvh] smXl:h-full bg-white text-black text-center z-20 space-y-14 pt-20"
+            ? "flex flex-col gap-12 justify-center items-center w-screen h-[100dvh] bg-white text-black text-center z-20 "
             : "hidden"
         } `}
-        >
-          <li
-            className={`cursor-pointer lineStyle ${
-              activeSection === "home" && "text-"
-            }`}
-            onClick={() => scrollToSection("home")}
           >
-            HOME
-          </li>
-          <li
-            className={`cursor-pointer lineStyle ${
-              activeSection === "about" && " text-mainColor"
-            }`}
-            onClick={() => scrollToSection("about")}
-          >
-            ABOUT
-          </li>
-          <li
-            className={`cursor-pointer lineStyle ${
-              activeSection === "skill" && " text-mainColor"
-            }`}
-            onClick={() => scrollToSection("skill")}
-          >
-            SKILL
-          </li>
-          <li
-            className={`cursor-pointer lineStyle ${
-              activeSection === "work" && " text-mainColor"
-            }`}
-            onClick={() => scrollToSection("work")}
-          >
-            WORK
-          </li>
-          <li>
-            <button aria-label="darkModeBtn" onClick={toggleNightMode}>
-              {darkMode == "dark" ? <MdWbSunny /> : <MdDarkMode />}
-            </button>
-          </li>
-
+            <li
+              className={`cursor-pointer lineStyle ${
+                activeSection === "home" && "text-"
+              }`}
+              onClick={() => scrollToSection("home")}
+            >
+              HOME
+            </li>
+            <li
+              className={`cursor-pointer lineStyle ${
+                activeSection === "about" && " text-mainColor"
+              }`}
+              onClick={() => scrollToSection("about")}
+            >
+              ABOUT
+            </li>
+            <li
+              className={`cursor-pointer lineStyle ${
+                activeSection === "skill" && " text-mainColor"
+              }`}
+              onClick={() => scrollToSection("skill")}
+            >
+              SKILL
+            </li>
+            <li
+              className={`cursor-pointer lineStyle ${
+                activeSection === "work" && " text-mainColor"
+              }`}
+              onClick={() => scrollToSection("work")}
+            >
+              WORK
+            </li>
+            <li>
+              <button aria-label="darkModeBtn" onClick={toggleNightMode}>
+                {darkMode == "dark" ? <MdWbSunny /> : <MdDarkMode />}
+              </button>
+            </li>
+            <li className="block md:hidden">
+              <a
+                className="bg-black text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-4
+                         md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm"
+                href="/resume/resume_AtenaHatta.pdf"
+                target="_blank"
+                aria-label="resume"
+                rel="noopener noreferrer"
+              >
+                RESUME
+              </a>
+            </li>
+          </ul>
           <a
+            className="bg-black  text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-1 hidden md:block
+                         md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm"
             href="/resume/resume_AtenaHatta.pdf"
             target="_blank"
             aria-label="resume"
             rel="noopener noreferrer"
           >
-            <li
-              className="bg-black mx-auto text-white xs:w-[130px] md:w-auto xs:py-2 md:py-2 xs:px-1
-             md:px-4 border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-sm"
-            >
-              RESUME
-            </li>
+            RESUME
           </a>
-        </ul>
+        </div>
       </div>
     </nav>
   );
