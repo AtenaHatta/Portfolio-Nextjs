@@ -3,8 +3,6 @@
     <img src="https://ik.imagekit.io/atcan/readme_portfolioNextjsDarkmode.png?updatedAt=1692947515423" width="750" height="100%/">
 </p> 
 
-<p id="description">My portfolio</p>
-
 <h2>🚀 Demo</h2>
 https://atenahatta.vercel.app/
 <br>
