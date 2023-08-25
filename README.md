@@ -1,6 +1,6 @@
 <p align="center">
     <img src="https://ik.imagekit.io/atcan/reedme_poirtfolioNextjs.png?updatedAt=1692947301199" width="750" height="100%/">
-    <img src="https://ik.imagekit.io/atcan/readme_portfolioNextjsDarkmode.png?updatedAt=1692947515423" width="750" height="100%/">
+    <p align="right">by Lighthouse peformance checker</p>
 </p> 
 
 <h2>🚀 Demo</h2>
@@ -9,17 +9,17 @@ https://atenahatta.vercel.app/
 <br>
 
 <h2>🧐 Features</h2>
+💻 Performance: <br>
+　　As per the Lighthouse results, the Performance is at 100%, as is the SEO, Accessibility, and Best Practices.<br>
+　　By utilizing TypeScript and optimizing all images, it is possible to achieve a faster runtime processing speed.<br><br>
+  
 🌗 Dark Mode: <br>
 　　The navigation bar contains a user-friendly Dark-Mode button.<br>
-　　All colors are inverted with a 100% filter<br><br>
+　　All colors are inverted with a 100% filter.<br><br>
    
 📕 Navigation bar: <br>
-　　The contents in the navigation bar <b>changes color for each currently positioned section</b> and indicates their location<br>
+　　The contents in the navigation bar <b>changes color for each currently positioned section</b> and indicates their location.<br>
 　　Pressing the table of contents <b>smoothly scrolls</b> and gently <b>fades-in</b> the content of the section.<br><br>
-   
-💻 Performance: <br>
-　　Utilizing the Next.js app router and employing SSR to enhance initial load speed.<br>
-　　By utilizing TypeScript and optimizing all images, it is possible to achieve a faster runtime processing speed<br><br>
   
 🎨 Simplicity in color palette:<br>
 　　The design features a palette of black, white, gray, and purple, achieving a simple yet clear aesthetic. <br>
