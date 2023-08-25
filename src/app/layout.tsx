@@ -19,7 +19,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
       </head>
-
       <ThemeContextProvider>
         <body className={inter.className}>{children}</body>
       </ThemeContextProvider>

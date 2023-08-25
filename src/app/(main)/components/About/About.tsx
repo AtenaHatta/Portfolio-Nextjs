@@ -1,6 +1,5 @@
 "use client";
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
-import Link from "next/link";
 
 export default function About({ className = "" }) {
   const { darkMode } = useDarkMode();
