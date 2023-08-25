@@ -23,9 +23,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
       </head>
-      <ThemeContextProvider>
-        <body className={yesevaOne.className}>{children}</body>
-      </ThemeContextProvider>
+      <body className={yesevaOne.className}>
+        <ThemeContextProvider>{children}</ThemeContextProvider>
+      </body>
     </html>
   );
 }
