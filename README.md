@@ -1,5 +1,6 @@
 <p align="center">
     <img src="https://ik.imagekit.io/atcan/reedme_poirtfolioNextjs.png?updatedAt=1692947301199" width="750" height="100%/">
+    <img src="https://ik.imagekit.io/atcan/readme_portfolioNextjsDarkmode.png?updatedAt=1692947515423" width="750" height="100%/">
 </p> 
 
 <p id="description">My portfolio</p>
