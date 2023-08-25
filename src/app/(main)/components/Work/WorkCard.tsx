@@ -44,7 +44,7 @@ export default function Work({ project }: WorkProps) {
       <Image
         className={`${
           darkMode == "dark" ? "invert" : ""
-        } bg-no-repeat w-[300px] h-[170px] md:w-[400px] md:h-ful`}
+        } bg-no-repeat w-[300px] md:w-[400px] md:h-ful`}
         src={project.image}
         width={300}
         height={170}

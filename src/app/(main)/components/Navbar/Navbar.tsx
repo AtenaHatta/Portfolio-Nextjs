@@ -54,7 +54,7 @@ export default function Navbar() {
         {/* hamburger menu */}
         <div className="flex justify-end items-center md:hidden fixed z-50 right-3 top-3">
           <div className=" p-2">
-            <button onClick={handleMenuClick}>
+            <button aria-label="hamburgerMenuBtn" onClick={handleMenuClick}>
               {isMenuOpen ? (
                 <MdClose className="text-4xl cursor-pointer lineStyle bg-opacity-75 bg-white" />
               ) : (

@@ -11,7 +11,7 @@ export default function Contact() {
         className={`${
           darkMode == "dark" ? "invert" : ""
         }  bg-opacity-75 rounded-lg text-black xs:text-3xl md:text-5xl space-y-2 md:space-y-6 
-    md:mb-10 flex-col items-end justify-end flex  p-1 md:p-4 bg-white`}
+    md:mb-10 flex-col items-end justify-end flex p-1 md:p-4 bg-white fixed right-0 bottom-0`}
       >
         <a
           href="https://github.com/AtenaHatta"
