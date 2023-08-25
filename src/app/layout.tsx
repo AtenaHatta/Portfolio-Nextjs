@@ -1,8 +1,8 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Yeseva_One } from "next/font/google";
 import { ThemeContextProvider } from "./(main)/components/DarkModeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const yesevaOne = Yeseva_One({ display: "swap", weight: "400" });
 
 export const metadata = {
   title: "Atena's portfolio",
@@ -20,7 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
       </head>
       <ThemeContextProvider>
-        <body className={inter.className}>{children}</body>
+        <body className={yesevaOne.className}>{children}</body>
       </ThemeContextProvider>
     </html>
   );
