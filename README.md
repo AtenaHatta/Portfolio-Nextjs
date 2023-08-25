@@ -1,6 +1,9 @@
 <p align="center">
+    <p align="left">▼ Desktop view<br/></p>
     <img src="https://ik.imagekit.io/atcan/reedme_poirtfolioNextjs.png?updatedAt=1692947301199" width="750" height="100%/">
-    <p align="right">by Lighthouse peformance checker</p>
+    <p align="left">▼ Mobile view<br/></p>
+    <img src="https://ik.imagekit.io/atcan/readme_portfolioNextjsResponsive.png?updatedAt=1693003247436" width="750" height="100%/">
+    <p align="left">by Lighthouse peformance checker</p>
 </p> 
 
 <h2>🚀 Demo</h2>
