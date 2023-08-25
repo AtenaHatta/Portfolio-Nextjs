@@ -4,7 +4,7 @@ import "./heroStyle.css";
 export default function Hero() {
   return (
     <section id="home">
-      <div className="flex h-[105dvh] items-center bg-white">
+      <div className="flex h-[105dvh] items-center bg-white text-black">
         <div className="font-yesevaOne ml-1 md:ml-10">
           <h1 className="text-7xl">
             Hi, I&apos;m{" "}

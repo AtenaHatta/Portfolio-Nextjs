@@ -16,7 +16,7 @@ interface IconsSectionProps {
 const IconsSection: React.FC<IconsSectionProps> = ({ title, icons }) => {
   return (
     <div>
-      <h2 className="text-base md:text-xl font-yesevaOne">{title}</h2>
+      <h3 className="text-base md:text-xl font-yesevaOne">{title}</h3>
       <div className="flex bg-[#e8e8e8a7] rounded-lg justify-center m-2 xs:p-1 md:p-5 flex-wrap">
         {icons.map((item, index) => (
           <div
@@ -36,4 +36,3 @@ const IconsSection: React.FC<IconsSectionProps> = ({ title, icons }) => {
 };
 
 export default IconsSection;
-
