@@ -11,7 +11,7 @@ https://atenahatta.vercel.app/
 <h2>🧐 Features</h2>
 💻 Performance: <br>
 　　As per the Lighthouse results, the Performance is at 100%, as is the SEO, Accessibility, and Best Practices.<br>
-　　By utilizing Next.js app router and optimizing all images, it's possible to achieve a faster runtime processing speed.<br><br>
+　　By utilizing App router and optimizing all images, it's possible to achieve a faster runtime processing speed.<br><br>
   
 🌗 Dark Mode: <br>
 　　The navigation bar contains a user-friendly Dark-Mode button.<br>
