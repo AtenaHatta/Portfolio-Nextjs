@@ -6,6 +6,7 @@ const yesevaOne = Yeseva_One({
   display: "swap",
   weight: "400",
   subsets: ["latin"],
+  variable: "--font-yesevaOne",
 });
 
 export const metadata = {
@@ -19,13 +20,13 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" className={yesevaOne.className}>
       <head>
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
       </head>
-      <body className={yesevaOne.className}>
-        <ThemeContextProvider>{children}</ThemeContextProvider>
-      </body>
+      <ThemeContextProvider>
+        <body className={yesevaOne.className}>{children}</body>
+      </ThemeContextProvider>
     </html>
   );
 }
