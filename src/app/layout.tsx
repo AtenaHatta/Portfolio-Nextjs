@@ -2,7 +2,11 @@ import "./globals.css";
 import { Yeseva_One } from "next/font/google";
 import { ThemeContextProvider } from "./(main)/components/DarkModeProvider";
 
-const yesevaOne = Yeseva_One({ display: "swap", weight: "400" });
+const yesevaOne = Yeseva_One({
+  display: "swap",
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Atena's portfolio",
