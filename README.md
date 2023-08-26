@@ -13,8 +13,8 @@ https://atenahatta.vercel.app/
 
 <h2>🧐 Features</h2>
 💻 Performance: <br>
-　　As per the Lighthouse results, the Performance is at 100%, as is the SEO, Accessibility, and Best Practices.<br>
-　　Achieved 100% performance on both desktop and smartphone sizes.<br>
+　　As per the Lighthouse results,<br>
+　　The performance scored 100% for both desktop and smartphone sizes, as did the SEO, Accessibility, and Best Practices.<br>
 　　By utilizing App router and optimizing all images, it's possible to achieve a faster runtime processing speed.<br><br>
   
 🌗 Dark Mode: <br>
