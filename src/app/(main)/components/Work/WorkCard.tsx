@@ -53,9 +53,9 @@ export default function Work({ project }: WorkProps) {
       <h1 className="text-3xl md:text-4xl font-yesevaOne py-1">
         {project.title}
       </h1>
-      <h2 className="text-lg md:text-xl font-yesevaOne">
+      <h3 className="text-lg md:text-xl font-yesevaOne">
         {project.description}
-      </h2>
+      </h3>
 
       <div className="flex justify-center text-xs md:text-sm space-x-1 m-2 md:m-3">
         {project.icons.map((icon: string) => (
