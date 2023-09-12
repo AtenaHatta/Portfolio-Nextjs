@@ -62,6 +62,6 @@ export const projectsData: Project[] = [
     githubLink: "https://github.com/AtenaHatta/black_trigger_diagnose",
     demoLink: "https://blacktriggerdiagnose.netlify.app/",
     image:
-      "https://raw.githubusercontent.com/AtenaHatta/black_trigger_diagnose/main/img_title_blacktriggerdiagnose.png",
+      "https://ik.imagekit.io/atcan/Group%2012.png?updatedAt=1694559533161",
   },
 ];
