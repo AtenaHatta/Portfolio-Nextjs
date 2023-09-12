@@ -53,7 +53,7 @@ export default function About({ className = "" }) {
                 className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
              text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base z-[1000]"
               >
-                Contact
+                CONTACT
               </a>
               <a
                 href="/resume/resume_AtenaHatta.pdf"

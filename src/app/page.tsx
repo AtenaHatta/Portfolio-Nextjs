@@ -43,7 +43,7 @@ export default function Home() {
       <div
         className={` ${
           darkMode == "dark" ? "invert" : ""
-        } text-black bg-white max-w-[1560px] mx-auto relative`}
+        } text-black bg-white max-w-[2560px] mx-auto relative`}
       >
         <Hero />
         <About className="fadeIn" />
