@@ -9,7 +9,7 @@ const useScrollCheck = () => {
       const triggerLength = window.innerHeight * 0.1;
 
       if (window.innerWidth > 768) {
-        bottomSectionTrigger = 300;
+        bottomSectionTrigger = 500;
       } else {
         bottomSectionTrigger = 665;
       }

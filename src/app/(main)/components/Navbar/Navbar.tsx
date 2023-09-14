@@ -3,7 +3,6 @@ import "./navLinkLineStyle.css";
 import { MdDarkMode } from "react-icons/md";
 import { MdWbSunny } from "react-icons/md";
 import { useState } from "react";
-import Link from "next/link";
 import useScrollCheck from "@/hooks/useScrollCheck";
 import useActiveSection from "@/hooks/useActiveSection";
 import { MdMenu, MdClose } from "react-icons/md";
@@ -105,6 +104,14 @@ export default function Navbar() {
               onClick={() => scrollToSection("work")}
             >
               WORK
+            </li>
+            <li
+              className={`cursor-pointer lineStyle ${
+                activeSection === "100" && " text-mainColor"
+              }`}
+              onClick={() => scrollToSection("100")}
+            >
+              100
             </li>
             <li>
               <button aria-label="darkModeBtn" onClick={toggleNightMode}>

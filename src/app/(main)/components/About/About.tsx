@@ -6,8 +6,12 @@ export default function About({ className = "" }) {
 
   return (
     <section id="about">
+      <div className="flex items-center">
+        <h1 className="text-6xl md:text-8xl pl-2 text-gray-300">ABOUT</h1>
+        <div className="border-b text-gray-300" style={{ width: "30%" }}></div>
+      </div>
       <div className={`about ${className}`}>
-        <div className="relative text-black bg-white flex items-center flex-col md:flex-row justify-center py-12 md:py-80 md:h-full">
+        <div className="relative text-black bg-white flex items-center flex-col md:flex-row justify-center pt-24 md:pt-24 pb-32 md:py-80 md:h-full">
           <div
             className={`${
               darkMode == "dark" ? "invert" : ""
@@ -46,14 +50,12 @@ export default function About({ className = "" }) {
               coding, I&apos;m always conscious of server costs and strive for
               efficiency in production.
             </p>
-            <div className="flex">
+            <div className="flex space-x-5">
               <a
-                href="mailto:hattaatena@gmail.com"
-                aria-label="email"
                 className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
              text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base z-[1000]"
               >
-                CONTACT
+                100things
               </a>
               <a
                 href="/resume/resume_AtenaHatta.pdf"
@@ -64,6 +66,14 @@ export default function About({ className = "" }) {
                 text-white xs:py-2 md:py-2 xs:px-2 md:px-4 ml-5 text-xs md:text-base"
               >
                 RESUME
+              </a>
+              <a
+                href="mailto:hattaatena@gmail.com"
+                aria-label="email"
+                className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
+             text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base z-[1000]"
+              >
+                CONTACT
               </a>
             </div>
           </div>
