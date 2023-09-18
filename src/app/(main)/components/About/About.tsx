@@ -27,54 +27,57 @@ export default function About({ className = "" }) {
           <div className="flex flex-col items-left justify-center w-[80%] md:w-[45%] md:ml-5">
             <p className="xs:text-xs md:text-base my-2 md:my-5">
               I&apos;m a{" "}
-              <span className="text-sm md:text-xl font-yesevaOne">
-                Front-End Developer{" "}
-              </span>
+              <div className="relative text-xs md:text-xl inline-block">
+                <span className="absolute inset-x-0 bottom-1 h-2 bg-violet-600 opacity-50" />
+                <p className="relative z-10">Front-End Developer</p>
+              </div>{" "}
               with a strong focus on{" "}
-              <span className="text-sm md:text-xl font-yesevaOne">React</span>{" "}
+              <span className="text-sm md:text-xl font-yesevaOne text-mainColor">React</span>{" "}
               and{" "}
-              <span className="text-sm md:text-xl font-yesevaOne">
-                TypeScript
-              </span>
-              .
-              <br />I handle everything from app architecture to{" "}
-              <span className="text-sm md:text-xl text-mainColor font-yesevaOne">
-                design planning{" "}
-              </span>
-              with Figma,{" "}
-              <span className="text-sm md:text-xl text-mainColor font-yesevaOne">
-                performance-focused coding
-              </span>
+              <span className="text-sm md:text-xl font-yesevaOne text-mainColor">TypeScript</span>.
+              <br />
+              I handle everything from app architecture to{" "}
+              <div className="relative text-xs md:text-xl inline-block">
+                <span className="absolute inset-x-0 bottom-1 h-2 bg-violet-600 opacity-50" />
+                <p className="relative z-10">design planning</p>
+              </div>
+              {" "}with Figma,{" "}
+              <div className="relative text-xs md:text-xl inline-block">
+                <span className="absolute inset-x-0 bottom-1 h-2 bg-violet-600 opacity-50" />
+                <p className="relative z-10">performance-focused coding</p>
+              </div>
               , and deployment. I&apos;m particularly meticulous about the
               overall design and layout, down to the pixel. When it comes to
               coding, I&apos;m always conscious of server costs and strive for
               efficiency in production.
             </p>
-            <div className="flex space-x-5">
-              <a
-                className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
-             text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base z-[1000]"
-              >
-                100things
-              </a>
-              <a
-                href="/resume/resume_AtenaHatta.pdf"
-                target="_blank"
-                aria-label="resume"
-                rel="noopener noreferrer"
-                className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
+            <div className="space-x-5">
+              <div className="flex mb-5 space-x-5">
+                <a
+                  href="/resume/resume_AtenaHatta.pdf"
+                  target="_blank"
+                  aria-label="resume"
+                  rel="noopener noreferrer"
+                  className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
                 text-white xs:py-2 md:py-2 xs:px-2 md:px-4 ml-5 text-xs md:text-base"
-              >
-                RESUME
-              </a>
-              <a
-                href="mailto:hattaatena@gmail.com"
-                aria-label="email"
+                >
+                  RESUME
+                </a>
+                <a
+                  href="mailto:hattaatena@gmail.com"
+                  aria-label="email"
+                  className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
+                text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base"
+                >
+                  CONTACT
+                </a>
+              </div>
+              {/* <a
                 className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
-             text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base z-[1000]"
+             text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-lg"
               >
-                CONTACT
-              </a>
+                Read about 100 things that compose me
+              </a> */}
             </div>
           </div>
         </div>

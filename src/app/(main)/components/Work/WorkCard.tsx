@@ -18,8 +18,9 @@ export default function Work({ project }: WorkProps) {
   }
 
   return (
+    // <Link href="/WorkDescriptionPage">
     <div className="relative flex flex-col items-center p-3 w-[320px] md:w-[400px] h-[100%] md:h-auto md:mb-0">
-      <div className="flex justify-end text-2xl space-x-2 mb-2 md:mb-3 w-full items-center">
+      <div className="flex justify-end text-2xl  mb-2 md:mb-3 w-full items-center">
         {project.team && (
           <p className="border-2 border-stone-500 rounded-lg text-stone-500 px-2 text-xs">
             {project.team}
@@ -70,5 +71,6 @@ export default function Work({ project }: WorkProps) {
 
       <p className="text-xs md:text-sm text-left">{project.details}</p>
     </div>
+    // </Link>
   );
 }

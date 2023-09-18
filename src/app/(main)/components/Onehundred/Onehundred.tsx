@@ -1,3 +1,4 @@
+'use strict';
 import Link from "next/link";
 
 export default function Onehundred({ className = "" }) {
@@ -16,7 +17,7 @@ export default function Onehundred({ className = "" }) {
             backgroundPosition: "center center",
           }}
         >
-          <Link href="/OnehundredCardWrapper">
+          <Link href="/OnehundredPage">
             <div className="py-24 md:py-44 text-4xl md:text-9xl text-center">
               100 things
               <p className="text-[0.6rem] md:text-lg pt-10">

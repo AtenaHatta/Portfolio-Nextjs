@@ -9,7 +9,6 @@ import Onehundred from "../app/(main)/components/Onehundred/Onehundred";
 import Footer from "../app/(main)/components/Footer/Footer";
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
 import { useEffect, useState } from "react";
-import OnehundredCardWrapper from "./(main)/components/Onehundred/OnehundredCardWrapper";
 
 export default function Home() {
   const { darkMode } = useDarkMode();
@@ -51,8 +50,7 @@ export default function Home() {
         <About className="fadeIn" />
         <Skill className="fadeIn" />
         <WorkWrapper className="fadeIn" />
-        {/* <Onehundred className="fadeIn" />
-        <OnehundredCardWrapper className="fadeIn" /> */}
+        {/* <Onehundred className="fadeIn" /> */}
         <div
           style={{ right: "calc(50% - 720px)" }}
           className="fixed bottom-0 z-50 "

@@ -47,4 +47,39 @@ export const oneData: OneCard[] = [
     image:
       "https://ik.imagekit.io/atcan/Group%201%20(1).png?updatedAt=1690743749251",
   },
+  {
+    id: 6,
+    title: "Figma",
+    description: "my idealn",
+    image:
+      "https://ik.imagekit.io/atcan/Group%201%20(1).png?updatedAt=1690743749251",
+  },
+  {
+    id: 6,
+    title: "Figma",
+    description: "my idealn",
+    image:
+      "https://ik.imagekit.io/atcan/Group%201%20(1).png?updatedAt=1690743749251",
+  },
+  {
+    id: 6,
+    title: "Figma",
+    description: "my idealn",
+    image:
+      "https://ik.imagekit.io/atcan/Group%201%20(1).png?updatedAt=1690743749251",
+  },
+  {
+    id: 6,
+    title: "Figma",
+    description: "my idealn",
+    image:
+      "https://ik.imagekit.io/atcan/Group%201%20(1).png?updatedAt=1690743749251",
+  },
+  {
+    id: 6,
+    title: "Figma",
+    description: "my idealn",
+    image:
+      "https://ik.imagekit.io/atcan/Group%201%20(1).png?updatedAt=1690743749251",
+  },
 ];

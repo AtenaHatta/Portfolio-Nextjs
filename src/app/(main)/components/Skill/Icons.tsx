@@ -26,7 +26,7 @@ import {
     { icon: SiTypescript, name: "TypeScript", color: "#6923E1" },
     { icon: SiNextdotjs, name: "Nextjs",color: "#6923E1" },
     { icon: SiRedux, name: "Redux" },
-    { icon: SiJavascript, name: "JavaScript" },
+    { icon: SiJavascript, name: "JavaScript", color: "#6923E1" },
     { icon: SiHtml5, name: "HTML" },
     { icon: SiCss3, name: "CSS" },
     { icon: SiSass, name: "Sass" },
