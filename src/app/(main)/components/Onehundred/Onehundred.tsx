@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Onehundred({ className = "" }) {
   return (
@@ -20,7 +19,7 @@ export default function Onehundred({ className = "" }) {
           <Link href="/OnehundredCardWrapper">
             <div className="py-24 md:py-44 text-4xl md:text-9xl text-center">
               100 things
-              <p className="text-[0.6rem] md:text-lg">
+              <p className="text-[0.6rem] md:text-lg pt-10">
                 These are the 100 elements that make up who I am.
               </p>
             </div>

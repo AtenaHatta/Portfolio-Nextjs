@@ -51,8 +51,8 @@ export default function Home() {
         <About className="fadeIn" />
         <Skill className="fadeIn" />
         <WorkWrapper className="fadeIn" />
-        <Onehundred className="fadeIn" />
-        <OnehundredCardWrapper className="fadeIn" />
+        {/* <Onehundred className="fadeIn" />
+        <OnehundredCardWrapper className="fadeIn" /> */}
         <div
           style={{ right: "calc(50% - 720px)" }}
           className="fixed bottom-0 z-50 "

@@ -15,7 +15,7 @@ export default function OnehundredCardWrapper() {
       <div
         className={`flex items-center justify-center bg-white pt-5 mx-5 md:pt-10 pb-24 md:pb-40`}
       >
-        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-5 md:gap-10">
+        <div className="grid grid-cols-5 lg:grid-cols-5 gap-5 md:gap-10">
           {oneData.map((card) => {
             return <OnehundredCard key={card.id} card={card} />;
           })}

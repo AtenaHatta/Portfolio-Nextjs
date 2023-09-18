@@ -105,14 +105,14 @@ export default function Navbar() {
             >
               WORK
             </li>
-            <li
+            {/* <li
               className={`cursor-pointer lineStyle ${
                 activeSection === "100" && " text-mainColor"
               }`}
               onClick={() => scrollToSection("100")}
             >
               100
-            </li>
+            </li> */}
             <li>
               <button aria-label="darkModeBtn" onClick={toggleNightMode}>
                 {darkMode == "dark" ? <MdWbSunny /> : <MdDarkMode />}
