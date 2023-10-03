@@ -25,15 +25,19 @@ export default function Navbar() {
     const element = document.getElementById(section);
 
     if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: section === "work" ? "start" : "center",
+      const rect = element.getBoundingClientRect();
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const targetPosition = rect.top + scrollTop - 80;  
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
       });
+
       setIsMenuOpen(false);
-    } else {
-      console.error(`No element found with id ${section}`);
-    }
-  };
+    } 
+};
+
 
   const toggleNightMode = () => {
     setDarkMode(darkMode == "light" ? "dark" : "light");

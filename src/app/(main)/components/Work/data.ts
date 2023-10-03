@@ -24,22 +24,8 @@ export const projectsData: Project[] = [
     image:
       "https://ik.imagekit.io/atcan/Group%201%20(1).png?updatedAt=1690743749251",
   },
-
-  //   {
-  //     id: 2,
-  //     title: "Keep",
-  //     team: "",
-  //     description: "Note application (CRUD)",
-  //     details:
-  //       "Keep app is a digital tool that allows users to create, edit, organize, and store various types of notes.",
-  //     icons: ["React", "Redux"],
-  //     githubLink: "https://github.com/AtenaHatta/Keep",
-  //     demoLink: "https://keep-five.vercel.app/",
-  //     image:
-  //       "https://raw.githubusercontent.com/AtenaHatta/Keep/main/image_keep_screenshot.png",
-  //   },
   {
-    id: 3,
+    id: 2,
     title: "Trivia guru",
     team: "Team project",
     description: "The ultimate quiz game",
@@ -52,7 +38,7 @@ export const projectsData: Project[] = [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Diagnose",
     team: "",
     description: "Black Trigger Diagnose",

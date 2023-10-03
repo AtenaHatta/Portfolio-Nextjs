@@ -25,7 +25,7 @@ export default function About({ className = "" }) {
           </div>
 
           <div className="flex flex-col items-left justify-center w-[80%] md:w-[45%] md:ml-5">
-            <p className="xs:text-xs md:text-base my-2 md:my-5">
+            <div className="xs:text-xs md:text-base my-2 md:my-5">
               I&apos;m a{" "}
               <div className="relative text-xs md:text-xl inline-block">
                 <span className="absolute inset-x-0 bottom-1 h-2 bg-violet-600 opacity-50" />
@@ -50,7 +50,7 @@ export default function About({ className = "" }) {
               overall design and layout, down to the pixel. When it comes to
               coding, I&apos;m always conscious of server costs and strive for
               efficiency in production.
-            </p>
+            </div>
             <div className="space-x-5">
               <div className="flex mb-5 space-x-5">
                 <a
