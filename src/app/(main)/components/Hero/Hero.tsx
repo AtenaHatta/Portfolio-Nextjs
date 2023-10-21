@@ -32,7 +32,7 @@ export default function Hero() {
               user-centric applications with{" "}
               <div className="relative  inline-block">
                 <span className="absolute inset-x-0 bottom-1 h-2 bg-violet-600 opacity-50" />
-                <p className="relative z-10">great performance and usability</p>
+                <p className="relative">great performance and usability</p>
             </div>
             </h3>
           </div>
