@@ -8,7 +8,7 @@ import WorkWrapper from "../app/(main)/components/Work/WorkWrapper";
 import Onehundred from "../app/(main)/components/Onehundred/Onehundred";
 import Footer from "../app/(main)/components/Footer/Footer";
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
   const { darkMode } = useDarkMode();
@@ -57,6 +57,7 @@ export default function Home() {
         >
           <Contact />
         </div>
+        <div className="w-full mb-[400px] -z-20" />
         <Footer />
       </div>
     </>

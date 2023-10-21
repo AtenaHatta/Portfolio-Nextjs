@@ -2,15 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body{
   background-color: black;
   font-family: var(--font-yesevaOne);
-}
-
-.night-mode {
-  background-color: #111;
-  color: white;
 }
 
 .fadeIn {

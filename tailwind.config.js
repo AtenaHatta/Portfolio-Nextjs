@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        topbg_img: "url(/images/bg_portfolio.webp)",
         profile_img: "url(/images/profilephoto.webp)",
         about_img: "url(/images/about.webp)",
         myYoutube_img: "url(/images/youtube.webp)",
