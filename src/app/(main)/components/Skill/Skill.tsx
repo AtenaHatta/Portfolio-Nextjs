@@ -12,12 +12,10 @@ export default function Skill({ className = "" }) {
       <div className="bg-white text-black items-center flex flex-col justify-center px-2 pb-32 md:pb-80 pt-2 md:pt-10  md:h-full">
         <div className={`work ${className}`}>
           <IconsSection title="Frontend" icons={frontendIcons} />
-
-          <div className="flex mt-10">
+          <div className="flex mt-10 justify-between">
             <div className="xs:mr-0 md:mr-20">
               <IconsSection title="Backend" icons={backendIcons} />
             </div>
-
             <div>
               <IconsSection title="Others" icons={otherIcons} />
             </div>

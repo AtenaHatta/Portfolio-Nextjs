@@ -1,5 +1,3 @@
-// React icons
-
 import {
     SiDocker,
     SiReact,
@@ -16,8 +14,8 @@ import {
     SiTypescript,
     SiMui,
     SiVercel,
-    SiNetlify,
     SiNextdotjs,
+    SiStrapi
   } from "react-icons/si";
   
   const frontendIcons = [
@@ -36,6 +34,7 @@ import {
     { icon: SiNodedotjs, name: "Node.js" },
     { icon: SiExpress, name: "Express" },
     { icon: SiMongodb, name: "MongoDB" },
+    { icon: SiStrapi, name: "Strapi" },
     { icon: SiDocker, name: "Docker" },
   ];
   
@@ -43,8 +42,6 @@ import {
     { icon: SiGit, name: "Git" },
     { icon: SiFigma, name: "Figma", color: "#6923E1" },
     { icon: SiVercel, name: "Vercel" },
-    { icon: SiNetlify, name: "Netlify" },
   ];
-  
   
   export { frontendIcons, backendIcons, otherIcons };
