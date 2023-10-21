@@ -1,11 +1,15 @@
 import { AiFillGithub } from "react-icons/ai";
+import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
 
 export default function Footer() {
   const date = new Date().getFullYear();
+  const { darkMode } = useDarkMode();
 
   return (
-    <div className="fixed bottom-0 -z-10 h-[400px] text-white bg-black w-full flex items-center text-center justify-center">
-      <div className="flex-row">
+    <div className={`${
+      darkMode == "dark" ? "invert" : ""
+    } text-white bg-transparent h-[100vh] w-full flex items-center text-center justify-center`}>
+      <div className="flex-row text-white">
         <h1 className="text-2xl md:text-4xl font-yesevaOne">ATENA HATTA</h1>
         <p className="text-xs md:text-lg">All rights reserved &copy; {date} by Atena Hatta</p>
         <div className="flex items-center text-center justify-center">

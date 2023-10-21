@@ -58,7 +58,7 @@ export default function Work({ project }: WorkProps) {
         {project.description}
       </h3>
 
-      <div className="flex justify-center text-xs md:text-sm space-x-1 m-2 md:m-3">
+      <div className="flex flex-wrap justify-center text-xs md:text-sm space-x-1 m-2 md:m-3">
         {project.icons.map((icon: string) => (
           <p
             key={icon}

@@ -5,13 +5,13 @@ export default function About({ className = "" }) {
   const { darkMode } = useDarkMode();
 
   return (
-    <section id="about">
-      <div className="flex items-center">
+    <section id="about" className="bg-white w-full h-full">
+      <div className="flex items-center w-full h-full">
         <h1 className="text-6xl md:text-8xl pl-2 text-gray-300">ABOUT</h1>
         <div className="border-b text-gray-300" style={{ width: "30%" }}></div>
       </div>
-      <div className={`about ${className}`}>
-        <div className="relative text-black bg-white flex items-center flex-col md:flex-row justify-center pt-24 md:pt-24 pb-32 md:py-80 md:h-full">
+      <div  className={`about ${className}  `}>
+        <div className="relative text-black bg-white  flex items-center flex-col md:flex-row justify-center pt-24 md:pt-24 pb-32 md:py-80 md:h-full">
           <div
             className={`${
               darkMode == "dark" ? "invert" : ""

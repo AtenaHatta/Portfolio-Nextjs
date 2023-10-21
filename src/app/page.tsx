@@ -42,9 +42,14 @@ export default function Home() {
     <>
       <Navbar />
       <div
+        className={`  fixed top-0 left-0 h-screen w-full bg-cover -z-10 ${
+          darkMode == "dark" ? " bg-bghero_dark" : "bg-bghero_light"
+        } `}
+      />
+      <div
         className={` ${
           darkMode == "dark" ? "invert" : ""
-        } text-black bg-white max-w-[2560px] mx-auto relative`}
+        } text-black  max-w-[2560px] mx-auto relative `}
       >
         <Hero />
         <About className="fadeIn" />
@@ -57,7 +62,6 @@ export default function Home() {
         >
           <Contact />
         </div>
-        <div className="w-full mb-[400px] -z-20" />
         <Footer />
       </div>
     </>

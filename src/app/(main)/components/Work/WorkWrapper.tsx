@@ -4,7 +4,7 @@ import { projectsData } from "./data";
 
 function WorkWrapper({ className = "" }) {
   return (
-    <section id="work">
+    <section id="work" className="bg-white">
       <div className="flex items-center">
         <h1 className="text-6xl md:text-8xl pl-2 text-gray-300">WORK</h1>
         <div className="border-b text-gray-300" style={{ width: "30%" }}></div>

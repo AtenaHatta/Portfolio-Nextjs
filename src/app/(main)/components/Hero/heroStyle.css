@@ -29,7 +29,7 @@ h2 {
   }
   @keyframes blinkTextCursor {
     from {
-      border-right-color: hsl(0, 0%, 0%);
+      border-right-color: hsl(0, 0%, 100%);
     }
     to {
       border-right-color: transparent;

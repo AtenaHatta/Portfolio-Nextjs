@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        topbg_img: "url(/images/bg_portfolio.webp)",
+        bghero_light: "linear-gradient(180deg, rgba(0, 0, 0, 0.01), #000000 100%),url(/images/bg_hero.webp)",
+        bghero_dark:"linear-gradient(180deg, rgba(0, 0, 0, 0.01), #000000 100%),url(/images/bg_hero_dark.webp)",
         profile_img: "url(/images/profilephoto.webp)",
         about_img: "url(/images/about.webp)",
         myYoutube_img: "url(/images/youtube.webp)",
