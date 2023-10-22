@@ -13,9 +13,9 @@ function WorkWrapper({ className = "" }) {
       <div className="flex items-center justify-center bg-white pt-2 md:pt-10 pb-24 md:pb-40">
         <div className={`work ${className}`}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-16">
-              {projectsData.map((project) => {
-                return <WorkCard key={project.id} project={project} />;
-              })}
+            {projectsData.map((project) => {
+              return <WorkCard key={project.id} project={project} />;
+            })}
           </div>
         </div>
       </div>
