@@ -8,8 +8,8 @@ export default function Contact() {
   return (
     <>
       <div
-        className={`bg-opacity-75 rounded-lg text-black xs:text-3xl md:text-5xl space-y-2 md:space-y-6 
-    md:mb-10 flex-col items-end justify-end flex p-1 md:p-4 bg-white fixed right-0 bottom-0 ${
+        className={`bg-opacity-50 rounded-lg text-black xs:text-3xl md:text-4xl md:space-y-4 
+    md:mb-10 flex-col items-end justify-end flex p-1 md:p-1 bg-white fixed z-50 right-0 bottom-0 ${
       darkMode == "dark" ? "invert" : ""
     } `}
       >

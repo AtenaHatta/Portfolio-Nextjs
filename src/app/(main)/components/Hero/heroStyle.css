@@ -14,9 +14,42 @@ h2 {
       width: 0;
     }
     to {
-      width: 1060px;
+      width: 100%;
     }
   }
+  @media screen and (min-width: 1200px) {
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 1050px;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 890px;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 730px;
+      }
+    }
+  }
+  
   @media screen and (max-width: 767px) {
     @keyframes typewriter {
       from {
@@ -29,7 +62,7 @@ h2 {
   }
   @keyframes blinkTextCursor {
     from {
-      border-right-color: hsl(0, 0%, 100%);
+      border-right-color: hsl(0, 0%, 295px);
     }
     to {
       border-right-color: transparent;

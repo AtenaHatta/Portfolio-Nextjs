@@ -41,11 +41,14 @@ export default function Home() {
   return (
     <>
       <Navbar />
+
       <div
         className={`  fixed top-0 left-0 h-screen w-full bg-cover -z-10 ${
           darkMode == "dark" ? " bg-bghero_dark" : "bg-bghero_light"
         } `}
       />
+      <Contact />
+
       <div
         className={` ${
           darkMode == "dark" ? "invert" : ""
@@ -60,7 +63,6 @@ export default function Home() {
           style={{ right: "calc(50% - 720px)" }}
           className="fixed bottom-0 z-50 "
         >
-          <Contact />
         </div>
         <Footer />
       </div>

@@ -1,5 +1,3 @@
-'use client'
-
 import { SiNextdotjs, SiReact, SiTypescript } from "react-icons/si";
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
 import "./heroStyle.css";
@@ -27,7 +25,7 @@ export default function Hero() {
               </span>
               with drive
             </h1>
-            <h2 className="flex text-base md:text-7xl animate-typewriter text-white tracking-tighter">
+            <h2 className="flex text-base md:text-5xl lg:text-6xl xl:text-7xl animate-typewriter text-white tracking-tighter">
               Coding dreams into reality
             </h2>
             <div className="text-sm md:text-2xl my-1 md:my-4 text-white">
