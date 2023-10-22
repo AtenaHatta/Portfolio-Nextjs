@@ -1,3 +1,5 @@
+'use client'
+
 import { SiNextdotjs, SiReact, SiTypescript } from "react-icons/si";
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
 import "./heroStyle.css";
