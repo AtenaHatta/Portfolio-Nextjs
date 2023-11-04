@@ -5,6 +5,7 @@ export type Project = {
   description: string;
   details: string;
   icons: string[];
+  figmaLink: string;
   githubLink: string;
   demoLink: string;
   image: string;
@@ -19,6 +20,7 @@ export const projectsData: Project[] = [
     details:
       "By logging in, users can access features such as 'subscribe' and 'watch later', enabling them to save their favorite videos.",
     icons: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
+    figmaLink: "https://www.figma.com/file/iEqOZAHK8qcdWPgau7eWCj/MyYoutube?type=design&node-id=2%3A3&mode=design&t=QfKfWMnZvffWfeN8-1",
     githubLink: "https://github.com/AtenaHatta/MyYouTube",
     demoLink: "https://my-you-tube-client-git-main-atenahatta.vercel.app/",
     image:
@@ -26,12 +28,13 @@ export const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: "Trivia guru",
+    title: "Trivia Guru",
     team: "Team project",
     description: "The ultimate quiz game",
     details:
       "Select a category and the number of questions to start the game. At the end, your answers will be displayed as a score.",
     icons: ["JavaScript", "jQuery", "Bootstrap"],
+    figmaLink: "",
     githubLink: "https://github.com/Vvan31/MovieGuru",
     demoLink: "https://triviaguru.netlify.app/top.html",
     image: "https://ik.imagekit.io/atcan/truvia.png?updatedAt=1694512570823",
@@ -45,6 +48,7 @@ export const projectsData: Project[] = [
     details:
       "A multiple-choice question with four options will appear. Depending on your answers, the final result will change.",
     icons: ["jQuery", "HTML", "CSS"],
+    figmaLink: "",
     githubLink: "https://github.com/AtenaHatta/black_trigger_diagnose",
     demoLink: "https://blacktriggerdiagnose.netlify.app/",
     image:
