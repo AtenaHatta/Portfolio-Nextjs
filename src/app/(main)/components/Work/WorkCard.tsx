@@ -18,7 +18,7 @@ export default function Work({ project }: WorkProps) {
   }
 
   const icons = [
-    { icon: <FiFigma />, text: "Design", link: project.figmaLink },
+    { icon: <FiFigma />, text: "Wireframe", link: project.figmaLink },
     { icon: <AiFillGithub />, text: "Github", link: project.githubLink },
     {
       icon: <FiExternalLink />,
