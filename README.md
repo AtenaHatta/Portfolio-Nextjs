@@ -7,7 +7,7 @@
 </p> 
 
 <h2>🚀 Demo</h2>
-https://atenahatta.vercel.app/](https://portfolio-nextjs-atenahatta.vercel.app/
+https://portfolio-nextjs-atenahatta.vercel.app/
 <br>
 <br>
 
