@@ -43,7 +43,7 @@ export default function About({ className = "" }) {
               </div>
               {" "}with Figma,{" "}
               <div className="relative text-xs md:text-xl inline-block">
-                <span className="absolute inset-x-0 bottom-1 h-2 bg-violet-600 opacity-50" />
+                <span className="absolute inset-x-0 bottom-1 h-2  opacity-50" />
                 <p className="relative z-10">performance-focused coding</p>
               </div>
               , and deployment. I&apos;m particularly meticulous about the
@@ -58,15 +58,23 @@ export default function About({ className = "" }) {
                   target="_blank"
                   aria-label="resume"
                   rel="noopener noreferrer"
-                  className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
+                  className="bg-black border rounded-sm hover:bg-violet-600  hover:text-white hover:border-white
                 text-white xs:py-2 md:py-2 xs:px-2 md:px-4 ml-5 text-xs md:text-base"
                 >
                   RESUME
                 </a>
                 <a
+                  href="https://medium.com/@atn041102"
+                  aria-label="medium"
+                  className="bg-black border rounded-sm hover:bg-violet-600  hover:text-white hover:border-white
+                text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base"
+                >
+                  ARTICLES
+                </a>
+                <a
                   href="mailto:hattaatena@gmail.com"
                   aria-label="email"
-                  className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
+                  className="bg-black border rounded-sm hover:bg-violet-600  hover:text-white hover:border-white
                 text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-base"
                 >
                   CONTACT
