@@ -10,7 +10,7 @@ export default function About({ className = "" }) {
         <h1 className="text-6xl md:text-8xl pl-2 text-gray-300">ABOUT</h1>
         <div className="border-b text-gray-300" style={{ width: "30%" }}></div>
       </div>
-      <div  className={`about ${className}  `}>
+      <div className={`about ${className}  `}>
         <div className="relative text-black bg-white  flex items-center flex-col md:flex-row justify-center pt-24 md:pt-24 pb-32 md:py-80 md:h-full">
           <div
             className={`${
@@ -32,16 +32,20 @@ export default function About({ className = "" }) {
                 <p className="relative z-10">Front-End Developer</p>
               </div>{" "}
               with a strong focus on{" "}
-              <span className="text-sm md:text-xl font-yesevaOne text-mainColor">React</span>{" "}
+              <span className="text-sm md:text-xl font-yesevaOne text-mainColor">
+                React
+              </span>{" "}
               and{" "}
-              <span className="text-sm md:text-xl font-yesevaOne text-mainColor">TypeScript</span>.
-              <br />
-              I handle everything from app architecture to{" "}
+              <span className="text-sm md:text-xl font-yesevaOne text-mainColor">
+                TypeScript
+              </span>
+              .
+              <br />I handle everything from app architecture to{" "}
               <div className="relative text-xs md:text-xl inline-block">
                 <span className="absolute inset-x-0 bottom-1 h-2 bg-violet-600 opacity-50" />
                 <p className="relative z-10">design planning</p>
-              </div>
-              {" "}with Figma,{" "}
+              </div>{" "}
+              with Figma,{" "}
               <div className="relative text-xs md:text-xl inline-block">
                 <span className="absolute inset-x-0 bottom-1 h-2  opacity-50" />
                 <p className="relative z-10">performance-focused coding</p>
@@ -80,12 +84,6 @@ export default function About({ className = "" }) {
                   CONTACT
                 </a>
               </div>
-              {/* <a
-                className="bg-black border rounded-sm hover:bg-white hover:text-black hover:border-black 
-             text-white xs:py-2 md:py-2 xs:px-2 md:px-4 text-xs md:text-lg"
-              >
-                Read about 100 things that compose me
-              </a> */}
             </div>
           </div>
         </div>
