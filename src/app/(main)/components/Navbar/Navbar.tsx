@@ -27,17 +27,16 @@ export default function Navbar() {
     if (element) {
       const rect = element.getBoundingClientRect();
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const targetPosition = rect.top + scrollTop - 80;  
+      const targetPosition = rect.top + scrollTop - 80;
 
       window.scrollTo({
         top: targetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
 
       setIsMenuOpen(false);
-    } 
-};
-
+    }
+  };
 
   const toggleNightMode = () => {
     setDarkMode(darkMode == "light" ? "dark" : "light");
@@ -92,6 +91,14 @@ export default function Navbar() {
               onClick={() => scrollToSection("about")}
             >
               ABOUT
+            </li>
+            <li
+              className={`cursor-pointer lineStyle ${
+                activeSection === "experience" && " text-mainColor"
+              }`}
+              onClick={() => scrollToSection("experience")}
+            >
+              EXPERIENCE
             </li>
             <li
               className={`cursor-pointer lineStyle ${

@@ -20,6 +20,9 @@ module.exports = {
         "extra-wide": "0.15em",
         "super-wide": "0.25em",
       },
+      animation: {
+        'float': 'float 1s ease-in-out infinite'
+      },
       screens: {
         xs: "250px",
         sm: "360px",

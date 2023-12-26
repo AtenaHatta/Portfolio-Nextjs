@@ -5,10 +5,11 @@ import Navbar from "./(main)/components/Navbar/Navbar";
 import About from "../app/(main)/components/About/About";
 import Skill from "../app/(main)/components/Skill/Skill";
 import WorkWrapper from "../app/(main)/components/Work/WorkWrapper";
-import Onehundred from "../app/(main)/components/Onehundred/Onehundred";
+// import Onehundred from "../app/(main)/components/Onehundred/Onehundred";
 import Footer from "../app/(main)/components/Footer/Footer";
 import { useDarkMode } from "@/app/(main)/components/DarkModeProvider";
 import { useEffect } from "react";
+import Experience from "./(main)/components/Experience/Experience";
 
 export default function Home() {
   const { darkMode } = useDarkMode();
@@ -56,14 +57,14 @@ export default function Home() {
       >
         <Hero />
         <About className="fadeIn" />
+        <Experience className="fadeIn" />
         <Skill className="fadeIn" />
         <WorkWrapper className="fadeIn" />
         {/* <Onehundred className="fadeIn" /> */}
         <div
           style={{ right: "calc(50% - 720px)" }}
           className="fixed bottom-0 z-50 "
-        >
-        </div>
+        ></div>
         <Footer />
       </div>
     </>
