@@ -67,12 +67,12 @@ export default function Navbar() {
         </div>
 
         {/* hamburger menu item */}
-        <div className="flex justify-end w-full md:max-w-[1560px] md:mx-auto md:justify-end items-center content-center md:p-5 ">
+        <div className="flex justify-end w-full md:max-w-[1560px] md:mx-auto md:justify-end items-center content-center md:p-5">
           <ul
             className={` md:pr-5 font-yesevaOne md:flex  text-xl md:text-lg md:space-x-10
         ${
           isMenuOpen
-            ? "flex flex-col gap-12 justify-center items-center w-screen h-[100dvh] bg-white text-black text-center z-20 "
+            ? "flex flex-col gap-12 justify-center items-center w-screen h-[100dvh] bg-white text-black text-center z-20"
             : "hidden"
         } `}
           >
